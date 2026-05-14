@@ -1,0 +1,48 @@
+---
+title: "August 2, 2026: what the EU AI Act high-risk deadline actually requires"
+date: "2026-04-01"
+author: "NXπ Research"
+description: "August 2, 2026 is the compliance deadline for high-risk AI systems under the EU AI Act. Here is what it actually requires — and what it means for enterprise AI deployments."
+---
+
+# August 2, 2026: what the EU AI Act high-risk deadline actually requires
+
+August 2, 2026 is the date by which organizations deploying high-risk AI systems in the EU must demonstrate compliance with the EU AI Act (Article 113). Many enterprise AI teams are behind.
+
+This post explains what the Act actually requires — without the legal fog.
+
+## What counts as high-risk?
+
+The EU AI Act classifies AI systems as high-risk if they are used in specific areas: employment (CV screening, performance monitoring), credit and insurance decisions, access to education, law enforcement, migration, and administration of justice.
+
+For most enterprise AI use cases — financial analysis, supply chain optimization, customer intelligence, workflow automation — the high-risk classification applies when the AI output directly informs a consequential decision about a person.
+
+An AI agent that generates financial close reports for CFO review is lower risk than one that automatically approves or rejects supplier invoices. The distinction is human oversight.
+
+## The six core requirements
+
+**1. Risk management system.** A documented process for identifying, analyzing, and mitigating risks throughout the AI system lifecycle. Updated continuously.
+
+**2. Data governance.** Training data (and fine-tuning data) must be documented, assessed for bias, and subject to appropriate quality controls. For RAG systems: the knowledge base sources must be documented and auditable.
+
+**3. Technical documentation.** A comprehensive technical file describing the system's purpose, architecture, data flows, performance metrics, and limitations. Must be made available to regulators on request.
+
+**4. Record-keeping.** Automatic logging sufficient to ensure traceability of outputs. For agentic AI: this means the full agent call tree, tool invocations, retrieved sources, and model outputs — for a defined retention period.
+
+**5. Transparency and user information.** Users must know they are interacting with an AI system. Outputs must be labeled as AI-generated when used in consequential decisions.
+
+**6. Human oversight.** High-risk systems must be designed to allow human oversight, correction, and overriding of AI outputs. The system must support — not undermine — human control.
+
+## What NXπ does
+
+NXπ is designed around these requirements, not retrofitted to them:
+
+**Record-keeping** is handled by the append-only audit log — every agent run, every tool call, every retrieved document, every model response, written to your PostgreSQL with tamper-evident timestamps.
+
+**Technical documentation** is generated from the platform's own configuration: MCP connections, model allowlists, RBAC policies, workflow DAGs — all machine-readable and exportable.
+
+**Data governance** for RAG is addressed through source attribution on every answer — the system records which documents informed each response, including document metadata and retrieval scores.
+
+**Human oversight** is built into the workflow builder — approval nodes can be inserted at any point in an automated workflow, requiring human sign-off before consequential actions execute.
+
+The August 2 deadline is not a one-time certification. It marks the beginning of ongoing compliance. Organizations that built their AI stack without audit infrastructure will spend the next 12–18 months retrofitting. Organizations that built on NXπ are already there.

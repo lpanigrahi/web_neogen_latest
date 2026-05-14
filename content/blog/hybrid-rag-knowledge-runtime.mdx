@@ -1,0 +1,48 @@
+---
+title: "Hybrid RAG is not a search feature. It is a knowledge runtime."
+date: "2026-04-15"
+author: "NXπ Research"
+description: "Vector search retrieves by meaning. BM25 retrieves by keyword. Reciprocal Rank Fusion combines them. The result is 91%+ recall — and a knowledge substrate that your agents can reason on."
+---
+
+# Hybrid RAG is not a search feature. It is a knowledge runtime.
+
+Most enterprise AI teams treat retrieval-augmented generation as a search feature. Build an index, embed your documents, retrieve the top-k results, append to the prompt. Ship it.
+
+This works well enough to pass a demo. It does not work well enough to run financial analysis, answer regulatory questions, or drive autonomous agents that need accurate context every time.
+
+The failure mode is silent and expensive. Vector-only retrieval achieves recall@10 between 65% and 78% on enterprise knowledge bases. That means in 22–35% of queries, the relevant document is not in the retrieved set. The model answers confidently from incomplete information.
+
+## The hybrid approach
+
+Hybrid RAG combines two retrieval strategies:
+
+**Dense retrieval (vector search):** Documents are embedded into a high-dimensional vector space. Query time: embed the question, find nearest neighbors by cosine similarity. Excellent at semantic understanding — finds relevant content even when exact terms differ.
+
+**Sparse retrieval (BM25):** Classical keyword-based ranking. Excellent at precise term matching — finds exact product names, regulation numbers, account IDs, error codes. Does not suffer from embedding drift.
+
+Neither approach alone is sufficient. Together, they cover each other's failure modes.
+
+## Reciprocal Rank Fusion
+
+The combination method matters. Naive approaches — score averaging, threshold filtering — do not work well in practice. Reciprocal Rank Fusion (RRF) is the correct algorithm.
+
+RRF assigns each document a score based on its rank in each retrieval list, not its raw score. The formula is simple:
+
+```
+RRF(d) = Σ 1 / (k + rank_i(d))
+```
+
+where k is a constant (typically 60) and rank_i is the document's rank in retrieval system i.
+
+The result: documents that appear in the top results of both retrieval systems get a strong combined score. Documents that excel in one system but are absent in the other are appropriately discounted.
+
+Benchmark results from 2026 RAG evaluations: recall@10 jumps from 65–78% (vector-only) to 91%+ (hybrid with RRF).
+
+## Why this matters for agents
+
+Autonomous agents that drive business processes — financial close, procurement analysis, customer retention — cannot tolerate 22–35% retrieval failure rates. A missed document in a financial reconciliation means a wrong answer. A missed contract term means a compliance gap.
+
+At 91%+ recall, retrieval becomes a reliable substrate for reasoning, not a best-effort lookup.
+
+NXπ implements hybrid RAG with RRF as the default retrieval strategy. Every RAG pipeline benefits from it automatically. Sources are attributed per chunk. Every answer is grounded.

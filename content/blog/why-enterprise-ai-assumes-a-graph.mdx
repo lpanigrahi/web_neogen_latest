@@ -1,0 +1,46 @@
+---
+title: "Why every enterprise AI platform assumes a graph — and what we built instead"
+date: "2026-05-01"
+author: "NXπ Research"
+description: "Copilot assumes the productivity graph. Agentforce assumes the customer graph. Palantir assumes an ontology. Glean assumes a knowledge graph. We built something different."
+---
+
+# Why every enterprise AI platform assumes a graph — and what we built instead
+
+Every major enterprise AI platform is built around a central assumption: that your organization has one primary graph.
+
+Microsoft Copilot assumes the **productivity graph** — your emails, meetings, documents, and calendar are the center of organizational intelligence.
+
+Salesforce Agentforce assumes the **customer graph** — CRM data, pipeline stages, and support tickets are where decisions happen.
+
+Palantir AIP assumes an **ontology** — a carefully modeled representation of your enterprise entities and their relationships.
+
+Glean assumes a **knowledge graph** — that search over internal content is the primary lever for organizational intelligence.
+
+ServiceNow and Moveworks assume the **workflow graph** — that process automation is where AI creates the most value.
+
+Every one of these platforms is right. For some organizations, for some problems, for some parts of the business.
+
+The problem is that enterprise organizations are not single-graph entities. A financial close requires data from SAP, Salesforce, and a dozen data warehouses. A procurement decision requires supplier intelligence from ERP, contract terms from documents, and market signals from external sources. A customer retention action requires service history from support, product usage from analytics, and order history from billing.
+
+**The most valuable AI use cases in the enterprise live in the join between graphs — not inside any one of them.**
+
+## What we built instead
+
+NXπ does not assume a primary graph. It is designed to be the **control plane across all graphs** — connecting them through the Model Context Protocol (MCP), governing access through zero-trust policies, and exposing the unified substrate to AI agents and workflows.
+
+In Q1 2026, both SAP and Salesforce announced native MCP support. For the first time, it became technically feasible to build a genuinely cross-system AI layer without proprietary connectors or data replication.
+
+78% of enterprise AI teams now have at least one MCP-backed agent in production. The protocol has become the standard.
+
+NXπ is built on that standard — as a first-class MCP host that treats SAP and Salesforce as equals, alongside PostgreSQL, MongoDB, Snowflake, and every other system your enterprise runs.
+
+## The governance layer no one else has
+
+Connecting multiple systems creates a new problem: governance at the intersection.
+
+When an agent can query both SAP billing and Salesforce pipeline, who decides what it can access? When an action updates both systems, what is the audit trail? When a financial model draws on five sources, how does the regulator trace the decision?
+
+NXπ answers these questions with zero-trust governance built into the data plane — not bolted on top. Every MCP connection is scoped per user, per role, and per data label. Every action is written to an append-only audit log in your PostgreSQL. PII is detected and masked before it reaches any LLM.
+
+This is the architecture that survives an audit, a board meeting, and August 2, 2026.
