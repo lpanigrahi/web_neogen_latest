@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArchitectureDiagramFull } from "@/components/site/ArchitectureDiagramFull";
+import { Download } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Architecture",
@@ -219,6 +220,20 @@ export default function ArchitecturePage() {
               </ul>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Download Poster */}
+      <section className="mx-auto max-w-[1408px] px-5 lg:px-12 pb-16">
+        <div className="max-w-3xl mx-auto text-right">
+          <a
+            href="/architecture/poster.svg"
+            download="nxpi-architecture-poster.svg"
+            className="inline-flex items-center gap-2 text-sm text-aurora-1 hover:text-aurora-2 transition-colors"
+          >
+            <Download size={16} />
+            Download architecture poster (SVG, A1)
+          </a>
         </div>
       </section>
 

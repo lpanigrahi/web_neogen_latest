@@ -106,10 +106,14 @@ export function SolutionsTeaser() {
   return (
     <div className="flex flex-col gap-6">
       {/* Tab bar */}
-      <div className="flex gap-1 rounded-lg bg-bg-elev-1 border border-border-soft p-1 w-fit">
+      <div role="tablist" aria-label="Solutions categories" className="flex gap-1 rounded-lg bg-bg-elev-1 border border-border-soft p-1 w-fit">
         {tabs.map((tab) => (
           <button
             key={tab}
+            role="tab"
+            aria-selected={activeTab === tab}
+            id={`tab-${tab.replace(/\s+/g, "-").toLowerCase()}`}
+            aria-controls="solutions-tabpanel"
             onClick={() => { setActiveTab(tab); setActiveItem(0); }}
             className={cn(
               "px-4 py-2 rounded-md text-sm font-medium transition-all",
@@ -130,6 +134,7 @@ export function SolutionsTeaser() {
             <button
               key={item.role}
               onClick={() => setActiveItem(i)}
+              aria-pressed={activeItem === i}
               className={cn(
                 "text-left rounded-lg border px-4 py-2.5 text-sm font-medium transition-all whitespace-nowrap lg:whitespace-normal",
                 activeItem === i
@@ -146,6 +151,10 @@ export function SolutionsTeaser() {
         <AnimatePresence mode="wait">
           <motion.div
             key={`${activeTab}-${activeItem}`}
+            id="solutions-tabpanel"
+            role="tabpanel"
+            aria-labelledby={`tab-${activeTab.replace(/\s+/g, "-").toLowerCase()}`}
+            aria-live="polite"
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}

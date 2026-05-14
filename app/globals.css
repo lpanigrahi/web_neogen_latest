@@ -56,4 +56,14 @@
 
   h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
   p { text-wrap: pretty; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-aurora-2);
+    outline-offset: 4px;
+    border-radius: var(--r-sm);
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
 }

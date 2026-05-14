@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { AIActReadiness } from "@/components/site/AIActReadiness";
 
 interface Props {
   params: Promise<{ doc: string }>;
@@ -318,11 +319,12 @@ export default async function LegalDocPage({ params }: Props) {
   }
 
   const Content = docContent[docKey];
+  const isAiActReadiness = docKey === "ai-act-readiness";
 
   return (
     <div className="min-h-screen pt-16">
       <div className="mx-auto max-w-[1408px] px-5 lg:px-12 py-20">
-        <div className="max-w-3xl">
+        <div className={isAiActReadiness ? "max-w-3xl" : "max-w-3xl"}>
           <FadeIn>
             <div className="inline-flex items-center gap-2 rounded-full border border-border-soft bg-surface px-3 py-1 text-xs text-text-tertiary mb-6">
               Legal
@@ -341,8 +343,14 @@ export default async function LegalDocPage({ params }: Props) {
           </FadeIn>
 
           <FadeIn delay={0.05}>
-            <DraftBanner />
-            <Content />
+            {isAiActReadiness ? (
+              <AIActReadiness />
+            ) : (
+              <>
+                <DraftBanner />
+                <Content />
+              </>
+            )}
           </FadeIn>
         </div>
       </div>

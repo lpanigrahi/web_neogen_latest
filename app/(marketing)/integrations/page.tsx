@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { IntegrationsGrid } from "@/components/site/IntegrationsGrid";
 import type { Integration } from "@/components/site/IntegrationsGrid";
 import rawIntegrations from "@/content/integrations.json";
+import { IntegrationsGridDynamic } from "@/components/site/IntegrationsGridDynamic";
 
 export const metadata: Metadata = {
   title: "Integrations",
@@ -69,7 +69,7 @@ export default function IntegrationsPage() {
 
       {/* Integrations Grid */}
       <section className="mx-auto max-w-[1408px] px-5 lg:px-12 pb-24">
-        <IntegrationsGrid integrations={integrations} />
+        <IntegrationsGridDynamic integrations={integrations} />
       </section>
 
       {/* Custom MCP Callout */}

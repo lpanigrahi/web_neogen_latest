@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Search } from "lucide-react";
 import { Mark } from "./Mark";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -44,6 +44,18 @@ export function Nav() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
+            <button
+              className="hidden lg:flex items-center gap-2 text-text-muted hover:text-text-secondary text-xs border border-border-soft rounded-lg px-3 py-1.5 transition-colors"
+              onClick={() => {
+                const event = new KeyboardEvent("keydown", { key: "k", metaKey: true, bubbles: true });
+                document.dispatchEvent(event);
+              }}
+              aria-label="Open command palette"
+            >
+              <Search size={12} />
+              <span>Search</span>
+              <kbd className="text-xs opacity-50">⌘K</kbd>
+            </button>
             <Button variant="ghost" size="sm" asChild><Link href="/contact">Sign in</Link></Button>
             <Button size="sm" asChild><Link href="/contact">Book a briefing</Link></Button>
           </div>

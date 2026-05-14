@@ -4,6 +4,8 @@ import { GeistMono } from "geist/font/mono";
 import { Instrument_Serif } from "next/font/google";
 import { CustomCursor } from "@/components/site/CustomCursor";
 import { NoiseOverlay } from "@/components/site/NoiseOverlay";
+import { CommandPalette } from "@/components/site/CommandPalette";
+import { ArchitecturePoster } from "@/components/site/ArchitecturePoster";
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -55,6 +57,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <CustomCursor />
         <NoiseOverlay />
+        <CommandPalette />
+        <ArchitecturePoster />
         {children}
       </body>
     </html>

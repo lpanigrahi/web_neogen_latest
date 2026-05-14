@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PricingTiers } from "@/components/site/PricingTiers";
-import { ROICalculator } from "@/components/site/ROICalculator";
+import { ROICalculatorDynamic } from "@/components/site/ROICalculatorDynamic";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -105,7 +105,7 @@ export default function PricingPage() {
               in the first 12–18 months.
             </p>
           </div>
-          <ROICalculator />
+          <ROICalculatorDynamic />
         </div>
       </section>
 

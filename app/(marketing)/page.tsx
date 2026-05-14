@@ -18,6 +18,9 @@ import { GovernanceDemo } from "@/components/demos/GovernanceDemo";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { SolutionsTeaser } from "@/components/site/SolutionsTeaser";
 import { StatsRow } from "@/components/site/StatsRow";
+import { AIDemoIsland } from "@/components/site/AIDemoIsland";
+import { Suspense } from "react";
+import { UTMPersonalizer } from "@/components/site/UTMPersonalizer";
 import { ArrowRight, ShieldCheck, Building2, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -183,7 +186,7 @@ export default function HomePage() {
           </FadeIn>
 
           <FadeIn direction="up" delay={0.14}>
-            <p className="text-lg lg:text-xl text-text-secondary max-w-2xl mb-10 leading-relaxed">
+            <p id="hero-subhead" className="text-lg lg:text-xl text-text-secondary max-w-2xl mb-10 leading-relaxed">
               NXπ connects SAP, Salesforce, and every data asset through governed agents — with the audit trail your regulators require and the sovereignty your CISO demands.
             </p>
           </FadeIn>
@@ -191,7 +194,7 @@ export default function HomePage() {
           <FadeIn direction="up" delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <Button size="lg" asChild>
-                <Link href="/contact">Book an executive briefing</Link>
+                <Link href="/contact" id="hero-cta-primary">Book an executive briefing</Link>
               </Button>
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/architecture" className="flex items-center gap-2">
@@ -453,6 +456,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── Section 7b: AI Demo Island ──────────────────────────────────── */}
+      <section className="py-16 lg:py-24">
+        <div className="mx-auto max-w-[1408px] px-5 lg:px-12">
+          <FadeIn direction="up">
+            <div className="mb-8 text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-text-muted mb-3">Live demo</p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-text-primary max-w-2xl mx-auto leading-tight">
+                See an agent answer a real finance question.
+              </h2>
+            </div>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.08}>
+            <div className="max-w-2xl mx-auto">
+              <AIDemoIsland />
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* ─── Section 8: Solutions teaser ──────────────────────────────────── */}
       <section className="py-24 lg:py-32 bg-bg-elev-1/30 border-y border-border-soft">
         <div className="mx-auto max-w-[1408px] px-5 lg:px-12">
@@ -564,6 +586,11 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(generateProductSchema()) }}
       />
+
+      {/* UTM Personalizer */}
+      <Suspense fallback={null}>
+        <UTMPersonalizer />
+      </Suspense>
     </div>
   );
 }

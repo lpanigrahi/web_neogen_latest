@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 3508" fill="none">
+  <!-- A1 size at 150dpi -->
+  <rect width="2480" height="3508" fill="#050914"/>
+
+  <!-- Aurora gradient background -->
+  <defs>
+    <radialGradient id="aurora1" cx="20%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#5B8DEF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#050914" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora2" cx="80%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#9D7CFF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#050914" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="markGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B8DEF"/>
+      <stop offset="100%" stop-color="#9D7CFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2480" height="3508" fill="url(#aurora1)"/>
+  <rect width="2480" height="3508" fill="url(#aurora2)"/>
+
+  <!-- Header -->
+  <text x="160" y="240" font-family="sans-serif" font-size="48" fill="#7A88AC" font-weight="600" letter-spacing="8">THE ENTERPRISE AI CONTROL PLANE</text>
+  <text x="160" y="360" font-family="sans-serif" font-size="120" fill="#F4F6FB" font-weight="700">NX&#960; Architecture</text>
+
+  <!-- Four layer boxes -->
+  <!-- Client Layer -->
+  <rect x="160" y="500" width="2160" height="580" rx="16" fill="#0B1124" stroke="#1F2A48" stroke-width="2"/>
+  <text x="240" y="580" font-family="sans-serif" font-size="36" fill="#5B8DEF" font-weight="600" letter-spacing="4">CLIENT LAYER</text>
+  <text x="240" y="640" font-family="sans-serif" font-size="28" fill="#7A88AC">Web Application &#xB7; Mobile Apps &#xB7; API Clients &#xB7; CLI Tools &#xB7; MCP Clients</text>
+
+  <!-- API Layer -->
+  <rect x="160" y="1140" width="2160" height="580" rx="16" fill="#0B1124" stroke="#1F2A48" stroke-width="2"/>
+  <text x="240" y="1220" font-family="sans-serif" font-size="36" fill="#4ADEDE" font-weight="600" letter-spacing="4">API &amp; ORCHESTRATION</text>
+  <text x="240" y="1280" font-family="sans-serif" font-size="28" fill="#7A88AC">Next.js 16 &#xB7; Agent Router &#xB7; MCP Host &#xB7; Token Budget Manager &#xB7; Audit Logger</text>
+
+  <!-- AI Core Layer -->
+  <rect x="160" y="1780" width="2160" height="580" rx="16" fill="#0B1124" stroke="#1F2A48" stroke-width="2"/>
+  <text x="240" y="1860" font-family="sans-serif" font-size="36" fill="#9D7CFF" font-weight="600" letter-spacing="4">AI CORE</text>
+  <text x="240" y="1920" font-family="sans-serif" font-size="28" fill="#7A88AC">10 LLM Providers &#xB7; Hybrid RAG (RRF) &#xB7; Multi-Agent Orchestration &#xB7; Embeddings &#xB7; Reranker</text>
+
+  <!-- Data Layer -->
+  <rect x="160" y="2420" width="2160" height="580" rx="16" fill="#0B1124" stroke="#1F2A48" stroke-width="2"/>
+  <text x="240" y="2500" font-family="sans-serif" font-size="36" fill="#5DD39E" font-weight="600" letter-spacing="4">DATA &amp; STORAGE</text>
+  <text x="240" y="2560" font-family="sans-serif" font-size="28" fill="#7A88AC">SAP HANA Cloud &#xB7; Salesforce &#xB7; PostgreSQL + pgvector &#xB7; MongoDB &#xB7; Snowflake &#xB7; 60+ MCP Connectors</text>
+
+  <!-- Footer -->
+  <text x="160" y="3420" font-family="sans-serif" font-size="28" fill="#51607F">nxpi.ai &#xB7; security@nxpi.ai &#xB7; EU AI Act Ready: August 2, 2026</text>
+  <text x="2320" y="3420" font-family="sans-serif" font-size="28" fill="#51607F" text-anchor="end">&#xA9; 2026 Negentrophi, Inc.</text>
+</svg>

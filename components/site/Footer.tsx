@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Mark } from "./Mark";
+import { TokenMeter } from "./TokenMeter";
 
 const links = {
   Platform: [
@@ -63,7 +64,10 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-12 pt-8 border-t border-border-soft flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="text-xs text-text-muted">© {new Date().getFullYear()} Negentrophi, Inc. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <p className="text-xs text-text-muted">© {new Date().getFullYear()} Negentrophi, Inc. All rights reserved.</p>
+            <TokenMeter />
+          </div>
           <a href="mailto:security@nxpi.ai" className="text-xs text-text-muted hover:text-text-tertiary transition-colors">security@nxpi.ai</a>
         </div>
       </div>
