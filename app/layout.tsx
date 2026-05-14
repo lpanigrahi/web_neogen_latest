@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: { default: "NXπ — The Enterprise AI Operations Platform", template: "%s | NXπ" },
   description: "NXπ connects SAP, Salesforce, and every data asset through governed AI agents — with the audit trail your regulators require and the sovereignty your CISO demands.",
   metadataBase: new URL("https://nxpi.ai"),
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    apple: "/favicon.svg",
+  },
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -27,6 +32,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html: `try{const t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')}catch{}`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Negentrophi",
+              alternateName: "NXπ",
+              url: "https://nxpi.ai",
+              logo: "https://nxpi.ai/brand/logo.svg",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "security@nxpi.ai",
+                contactType: "security",
+              },
+              sameAs: [],
+            }),
           }}
         />
         <CustomCursor />

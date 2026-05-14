@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { generateProductSchema } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MarqueeRow } from "@/components/site/MarqueeRow";
@@ -557,6 +558,12 @@ export default function HomePage() {
           </FadeIn>
         </div>
       </section>
+
+      {/* JSON-LD: Product schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateProductSchema()) }}
+      />
     </div>
   );
 }
