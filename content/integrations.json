@@ -1,0 +1,22 @@
+[
+  { "id": "sap-hana", "name": "SAP HANA Cloud", "category": "ERP", "description": "Real-time access to SAP HANA Cloud data via MCP.", "mcpServer": true },
+  { "id": "sap-s4hana", "name": "SAP S/4HANA", "category": "ERP", "description": "Connect S/4HANA business processes through Joule MCP.", "mcpServer": true },
+  { "id": "salesforce", "name": "Salesforce", "category": "CRM", "description": "Agentforce-compatible MCP integration for CRM data.", "mcpServer": true },
+  { "id": "mulesoft", "name": "MuleSoft", "category": "ERP", "description": "Enterprise integration via MuleSoft Anypoint MCP.", "mcpServer": true },
+  { "id": "postgresql", "name": "PostgreSQL", "category": "DB", "description": "Direct SQL access with pgvector for hybrid RAG.", "mcpServer": false },
+  { "id": "snowflake", "name": "Snowflake", "category": "DB", "description": "Cloud data warehouse integration for analytics.", "mcpServer": false },
+  { "id": "mongodb", "name": "MongoDB", "category": "DB", "description": "Document database with aggregation pipeline support.", "mcpServer": false },
+  { "id": "kafka", "name": "Apache Kafka", "category": "DB", "description": "Real-time event streaming for live data pipelines.", "mcpServer": false },
+  { "id": "databricks", "name": "Databricks", "category": "DB", "description": "Lakehouse analytics and ML platform integration.", "mcpServer": false },
+  { "id": "neo4j", "name": "Neo4j", "category": "DB", "description": "Graph database for relationship intelligence.", "mcpServer": false },
+  { "id": "redis", "name": "Redis", "category": "DB", "description": "In-memory key-value store for caching and sessions.", "mcpServer": false },
+  { "id": "anthropic", "name": "Anthropic Claude", "category": "LLM", "description": "Claude 3.5+ models via Anthropic API.", "mcpServer": false },
+  { "id": "openai", "name": "OpenAI", "category": "LLM", "description": "GPT-4o and o1 series via OpenAI API.", "mcpServer": false },
+  { "id": "google", "name": "Google Gemini", "category": "LLM", "description": "Gemini 1.5 Pro and Flash models.", "mcpServer": false },
+  { "id": "microsoft", "name": "Azure OpenAI", "category": "LLM", "description": "Enterprise-grade OpenAI models on Azure.", "mcpServer": false },
+  { "id": "cohere", "name": "Cohere", "category": "LLM", "description": "Command R+ for enterprise RAG workloads.", "mcpServer": false },
+  { "id": "ollama", "name": "Ollama", "category": "LLM", "description": "Self-hosted models — data never leaves your perimeter.", "mcpServer": false },
+  { "id": "s3", "name": "Amazon S3", "category": "Cloud", "description": "Object storage for documents and files.", "mcpServer": false },
+  { "id": "azure-blob", "name": "Azure Blob Storage", "category": "Cloud", "description": "Microsoft Azure object storage integration.", "mcpServer": false },
+  { "id": "gcs", "name": "Google Cloud Storage", "category": "Cloud", "description": "GCP object storage for enterprise data.", "mcpServer": false }
+]
