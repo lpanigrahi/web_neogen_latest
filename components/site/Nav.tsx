@@ -20,6 +20,7 @@ export function Nav() {
   const navLinks = [
     { href: "/platform", label: "Platform" },
     { href: "/solutions", label: "Solutions" },
+    { href: "/integrations", label: "Integrations" },
     { href: "/architecture", label: "Architecture" },
     { href: "/pricing", label: "Pricing" },
     { href: "/blog", label: "Blog" },

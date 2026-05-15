@@ -58,6 +58,7 @@ export default function PlatformPage() {
 
       {/* Pillar grid */}
       <section className="mx-auto max-w-[1408px] px-5 lg:px-12 pb-24">
+        <h2 className="sr-only">Platform pillars</h2>
         <FadeIn>
           <p className="mb-8 text-sm text-text-muted">
             Explore all six pillars — click any card for a deep dive.
@@ -84,9 +85,9 @@ export default function PlatformPage() {
                   <Layers className="h-5 w-5 text-aurora-2" />
                 </div>
                 <div>
-                  <h3 className="mb-1 font-semibold text-text-primary group-hover:text-aurora-1 transition-colors">
+                  <p className="mb-1 font-semibold text-text-primary group-hover:text-aurora-1 transition-colors">
                     Architecture deep-dive
-                  </h3>
+                  </p>
                   <p className="text-sm text-text-secondary">
                     How the six pillars interconnect — data flow, agent graph, and deployment topology.
                   </p>
@@ -103,9 +104,9 @@ export default function PlatformPage() {
                   <Shield className="h-5 w-5 text-green" />
                 </div>
                 <div>
-                  <h3 className="mb-1 font-semibold text-text-primary group-hover:text-aurora-1 transition-colors">
+                  <p className="mb-1 font-semibold text-text-primary group-hover:text-aurora-1 transition-colors">
                     Security &amp; compliance
-                  </h3>
+                  </p>
                   <p className="text-sm text-text-secondary">
                     EU AI Act readiness, SOC 2 Type II, zero-trust posture, and audit guarantees.
                   </p>

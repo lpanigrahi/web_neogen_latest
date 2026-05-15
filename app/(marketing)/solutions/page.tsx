@@ -22,6 +22,7 @@ export default function SolutionsPage() {
           </p>
         </div>
 
+        <h2 className="sr-only">Solutions by role, system, and industry</h2>
         <SolutionsHub />
       </section>
 

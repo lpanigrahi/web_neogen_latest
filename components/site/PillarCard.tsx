@@ -26,7 +26,7 @@ export function PillarCard({ eyebrow, title, body, bullets, href, demo, classNam
       whileHover={{ y: -4 }}
       transition={{ type: "spring", stiffness: 300, damping: 25 }}
     >
-      <div className="absolute inset-0 rounded-xl border border-aurora-1/0 group-hover:border-aurora-1/20 transition-all duration-300" />
+      <div className="absolute inset-0 rounded-xl border border-aurora-1/0 group-hover:border-aurora-1/20 transition-all duration-300 pointer-events-none" />
       {demo && <div className="mb-2">{demo}</div>}
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-text-muted mb-2">{eyebrow}</p>
