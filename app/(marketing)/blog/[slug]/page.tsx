@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { generateArticleSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -403,6 +404,13 @@ export default async function BlogPostPage({ params }: Props) {
           <FadeIn delay={0.08}>
             <Content />
           </FadeIn>
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(generateArticleSchema(post.title, post.description, post.date)),
+            }}
+          />
 
           {/* Footer nav */}
           <div className="mt-16 pt-8 border-t border-border-soft">
