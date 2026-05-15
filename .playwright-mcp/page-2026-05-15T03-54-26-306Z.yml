@@ -1,0 +1,303 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - link "All pillars" [ref=e33] [cursor=pointer]:
+          - /url: /platform
+          - img [ref=e34]
+          - text: All pillars
+        - generic [ref=e36]: /
+        - generic [ref=e37]: Zero-Trust Governance
+      - generic [ref=e41]:
+        - paragraph [ref=e43]: PILLAR 6
+        - heading "EU AI Act ready. Every action logged. Zero trust by default." [level=1] [ref=e45]
+        - paragraph [ref=e47]: Per-user RBAC, label-based policies, MCP server scoping, model allowlists, tool permissions, PII detection and masking before LLM, and an append-only audit log in your PostgreSQL. 100% of high-risk EU AI Act requirements met by August 2, 2026.
+        - link "Book an executive briefing" [ref=e50] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: Interactive demo
+          - heading "Zero-Trust Governance" [level=2] [ref=e55]
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - img [ref=e58]
+            - generic [ref=e60]: Zero-Trust Governance
+            - generic [ref=e61]: Click a role to inspect its policy
+          - generic [ref=e63]:
+            - table [ref=e64]:
+              - rowgroup [ref=e65]:
+                - row "Role Models MCP Servers Tools Data Scope Audit Log" [ref=e66]:
+                  - columnheader "Role" [ref=e67]
+                  - columnheader "Models" [ref=e68]
+                  - columnheader "MCP Servers" [ref=e69]
+                  - columnheader "Tools" [ref=e70]
+                  - columnheader "Data Scope" [ref=e71]
+                  - columnheader "Audit Log" [ref=e72]
+              - rowgroup [ref=e73]:
+                - row "Admin" [ref=e74] [cursor=pointer]:
+                  - cell "Admin" [ref=e75]
+                  - cell [ref=e76]:
+                    - img [ref=e78]
+                  - cell [ref=e80]:
+                    - img [ref=e82]
+                  - cell [ref=e84]:
+                    - img [ref=e86]
+                  - cell [ref=e88]:
+                    - img [ref=e90]
+                  - cell [ref=e92]:
+                    - img [ref=e94]
+                - row "Finance Analyst" [ref=e96] [cursor=pointer]:
+                  - cell "Finance Analyst" [ref=e97]
+                  - cell [ref=e98]:
+                    - img [ref=e100]
+                  - cell [ref=e102]:
+                    - img [ref=e104]
+                  - cell [ref=e105]:
+                    - img [ref=e107]
+                  - cell [ref=e108]:
+                    - img [ref=e110]
+                  - cell [ref=e112]:
+                    - img [ref=e114]
+                - row "Sales Rep ◆" [ref=e115] [cursor=pointer]:
+                  - cell "Sales Rep" [ref=e116]
+                  - cell [ref=e117]:
+                    - img [ref=e119]
+                  - cell [ref=e121]:
+                    - img [ref=e123]
+                  - cell [ref=e124]:
+                    - img [ref=e126]
+                  - cell "◆" [ref=e127]:
+                    - generic [ref=e129]: ◆
+                  - cell [ref=e130]:
+                    - img [ref=e132]
+                - row "Auditor" [ref=e135] [cursor=pointer]:
+                  - cell "Auditor" [ref=e136]
+                  - cell [ref=e137]:
+                    - img [ref=e139]
+                  - cell [ref=e141]:
+                    - img [ref=e143]
+                  - cell [ref=e146]:
+                    - img [ref=e148]
+                  - cell [ref=e151]:
+                    - img [ref=e153]
+                  - cell [ref=e155]:
+                    - img [ref=e157]
+                - row "Developer ◆" [ref=e159] [cursor=pointer]:
+                  - cell "Developer" [ref=e160]
+                  - cell [ref=e161]:
+                    - img [ref=e163]
+                  - cell [ref=e165]:
+                    - img [ref=e167]
+                  - cell [ref=e168]:
+                    - img [ref=e170]
+                  - cell "◆" [ref=e172]:
+                    - generic [ref=e174]: ◆
+                  - cell [ref=e175]:
+                    - img [ref=e177]
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - img [ref=e180]
+                - text: Full
+              - generic [ref=e182]:
+                - img [ref=e183]
+                - text: Partial
+              - generic [ref=e184]:
+                - generic [ref=e185]: ◆
+                - text: Restricted
+              - generic [ref=e186]:
+                - img [ref=e187]
+                - text: None
+          - generic [ref=e190]:
+            - generic [ref=e195]: Live Audit Feed
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - generic [ref=e198]: 09:24:26
+                - generic [ref=e199]: sarah.chen@corp
+                - generic [ref=e200]: agent.run
+                - generic [ref=e201]: sap_financial_close
+                - generic [ref=e202]: → allowed
+              - generic [ref=e203]:
+                - generic [ref=e204]: 09:24:26
+                - generic [ref=e205]: james.liu@corp
+                - generic [ref=e206]: tool.call
+                - generic [ref=e207]: salesforce.opportunity.write
+                - generic [ref=e208]: "→ denied — scope: CRM read-only"
+      - generic [ref=e210]:
+        - generic [ref=e211]:
+          - paragraph [ref=e212]: What it does
+          - heading "Three outcomes you can quote." [level=2] [ref=e213]
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - img [ref=e216]
+            - paragraph [ref=e219]: 100% EU AI Act high-risk requirements by Aug 2 2026
+          - generic [ref=e220]:
+            - img [ref=e221]
+            - paragraph [ref=e224]: Per-user MCP and model scoping
+          - generic [ref=e225]:
+            - img [ref=e226]
+            - paragraph [ref=e229]: PII detection and masking before LLM
+      - generic [ref=e230]:
+        - generic [ref=e231]:
+          - paragraph [ref=e232]: For who
+          - heading "Who cares most — and why." [level=2] [ref=e233]
+        - generic [ref=e234]:
+          - generic [ref=e235]:
+            - generic [ref=e236]: CISO
+            - paragraph [ref=e237]: “Zero trust by default means least privilege is the floor, not an aspiration. That's the standard I hold vendors to.”
+            - paragraph [ref=e238]: Chief Information Security Officer
+          - generic [ref=e239]:
+            - generic [ref=e240]: CLO
+            - paragraph [ref=e241]: “EU AI Act high-risk compliance by August 2 — with the audit trail to prove it. Our legal team signed off in one review.”
+            - paragraph [ref=e242]: Chief Legal Officer
+          - generic [ref=e243]:
+            - generic [ref=e244]: CFO
+            - paragraph [ref=e245]: “PII masking before the LLM means we can process sensitive financial data without regulatory exposure.”
+            - paragraph [ref=e246]: Chief Financial Officer
+      - generic [ref=e250]:
+        - heading "Ready to see Zero-Trust Governance live?" [level=2] [ref=e252]
+        - paragraph [ref=e254]: Book an executive briefing and walk through this pillar with our team.
+        - generic [ref=e256]:
+          - link "Book an executive briefing" [ref=e257] [cursor=pointer]:
+            - /url: /contact
+          - link "All six pillars" [ref=e258] [cursor=pointer]:
+            - /url: /platform
+            - text: All six pillars
+            - img [ref=e259]
+      - link "Previous Unified Data Layer" [ref=e264] [cursor=pointer]:
+        - /url: /platform/data-layer
+        - img [ref=e265]
+        - generic [ref=e267]:
+          - paragraph [ref=e268]: Previous
+          - paragraph [ref=e269]: Unified Data Layer
+  - contentinfo [ref=e271]:
+    - generic [ref=e272]:
+      - generic [ref=e273]:
+        - generic [ref=e274]:
+          - generic [ref=e275]:
+            - img "NXπ logo mark" [ref=e276]
+            - generic [ref=e281]: NXπ
+          - paragraph [ref=e282]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e287] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e288]:
+          - heading "Platform" [level=3] [ref=e289]
+          - list [ref=e290]:
+            - listitem [ref=e291]:
+              - link "MCP Fabric" [ref=e292] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e293]:
+              - link "Orchestration" [ref=e294] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e295]:
+              - link "Hybrid RAG" [ref=e296] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e297]:
+              - link "Workflows" [ref=e298] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e299]:
+              - link "Data Layer" [ref=e300] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e301]:
+              - link "Governance" [ref=e302] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e303]:
+          - heading "Solutions" [level=3] [ref=e304]
+          - list [ref=e305]:
+            - listitem [ref=e306]:
+              - link "NXπ for SAP" [ref=e307] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e308]:
+              - link "NXπ for Salesforce" [ref=e309] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e310]:
+              - link "SAP + Salesforce Fusion" [ref=e311] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e312]:
+              - link "For the CFO" [ref=e313] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e314]:
+              - link "For the CISO" [ref=e315] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e316]:
+          - heading "Company" [level=3] [ref=e317]
+          - list [ref=e318]:
+            - listitem [ref=e319]:
+              - link "About" [ref=e320] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e321]:
+              - link "Customers" [ref=e322] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e323]:
+              - link "Blog" [ref=e324] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e325]:
+              - link "Changelog" [ref=e326] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e327]:
+              - link "Contact" [ref=e328] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e329]:
+          - heading "Legal" [level=3] [ref=e330]
+          - list [ref=e331]:
+            - listitem [ref=e332]:
+              - link "Privacy Policy" [ref=e333] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e334]:
+              - link "Terms of Service" [ref=e335] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e336]:
+              - link "DPA" [ref=e337] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e338]:
+              - link "EU AI Act Readiness" [ref=e339] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e340]:
+              - link "Security" [ref=e341] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e342]:
+        - generic [ref=e343]:
+          - paragraph [ref=e344]: © 2026 Negentrophi, Inc. All rights reserved.
+          - generic "Marketing visualization — not real telemetry" [ref=e345]:
+            - generic [ref=e347]: 847,293,441
+            - generic [ref=e348]: tokens processed
+        - link "security@nxpi.ai" [ref=e349] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e355] [cursor=pointer]:
+    - img [ref=e356]
+  - alert [ref=e359]
+  - generic [ref=e360]:
+    - paragraph [ref=e361]:
+      - text: We use privacy-preserving analytics (no cookies, no tracking pixels). Your DNT preference is respected.
+      - link "Privacy Policy" [ref=e362] [cursor=pointer]:
+        - /url: /legal/privacy
+    - button "Dismiss" [ref=e363]:
+      - img [ref=e364]

@@ -6,9 +6,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const schema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Please enter a valid email address"),
-  company: z.string().min(2, "Company name is required"),
+  name: z.string().min(1, "Name is required").min(2, "Name must be at least 2 characters"),
+  email: z.string().min(1, "Email is required").email("Valid email required"),
+  company: z.string().min(1, "Company is required").min(2, "Company name is required"),
   role: z.enum(["ceo", "cto-cio", "cfo", "ciso", "cdo", "coo", "cro-cmo", "other"]),
   intent: z.enum(["briefing", "demo", "partner", "press", "security", "other"]),
   message: z.string().optional(),

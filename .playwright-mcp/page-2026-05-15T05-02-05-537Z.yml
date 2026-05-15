@@ -1,0 +1,658 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Switch to light mode" [ref=e21]:
+          - img [ref=e22]
+        - button "Open command palette" [ref=e28]:
+          - img [ref=e29]
+          - generic [ref=e32]: Search
+          - generic [ref=e33]: ⌘K
+        - link "Sign in" [ref=e34] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e35] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e36]:
+    - generic [ref=e37]:
+      - generic [ref=e42]:
+        - generic [ref=e44]: MCP-Native · Model-Agnostic · Self-Hostable
+        - heading "The AI control plane for the enterprise." [level=1] [ref=e47]
+        - paragraph [ref=e49]: NXπ connects SAP, Salesforce, and every data asset through governed agents — with the audit trail your regulators require and the sovereignty your CISO demands.
+        - generic [ref=e51]:
+          - link "Book an executive briefing" [ref=e52] [cursor=pointer]:
+            - /url: /contact
+          - link "See the architecture" [ref=e53] [cursor=pointer]:
+            - /url: /architecture
+            - text: See the architecture
+            - img [ref=e54]
+        - generic [ref=e57]:
+          - generic [ref=e58]: EU AI Act
+          - generic [ref=e59]: SOC 2
+          - generic [ref=e60]: GDPR
+          - generic [ref=e61]: HIPAA
+          - generic [ref=e62]: SOX
+          - generic [ref=e63]: ISO 27001
+      - generic [ref=e64]:
+        - paragraph [ref=e66]: Trusted by the regulated enterprise
+        - generic [ref=e68]:
+          - generic [ref=e69]: SAP
+          - generic [ref=e70]: Salesforce
+          - generic [ref=e71]: MuleSoft
+          - generic [ref=e72]: PostgreSQL
+          - generic [ref=e73]: Snowflake
+          - generic [ref=e74]: Anthropic
+          - generic [ref=e75]: OpenAI
+          - generic [ref=e76]: Google
+          - generic [ref=e77]: Microsoft
+          - generic [ref=e78]: Ollama
+          - generic [ref=e79]: SAP
+          - generic [ref=e80]: Salesforce
+          - generic [ref=e81]: MuleSoft
+          - generic [ref=e82]: PostgreSQL
+          - generic [ref=e83]: Snowflake
+          - generic [ref=e84]: Anthropic
+          - generic [ref=e85]: OpenAI
+          - generic [ref=e86]: Google
+          - generic [ref=e87]: Microsoft
+          - generic [ref=e88]: Ollama
+      - generic [ref=e91]:
+        - generic [ref=e93]:
+          - paragraph [ref=e94]: The Wedge
+          - heading "Every other AI platform assumes a graph. NXπ does not require the choice." [level=2] [ref=e95]
+          - paragraph [ref=e96]: Copilot Studio assumes productivity. Agentforce assumes the customer graph. Palantir AIP assumes an ontology. Glean assumes knowledge. ServiceNow assumes workflow.
+        - generic [ref=e98]:
+          - blockquote [ref=e99]:
+            - paragraph [ref=e100]: "\"NXπ is the only enterprise AI platform that is MCP-native, model-agnostic, self-hostable, and built for SAP and Salesforce as first-class peers — under one governed control plane.\""
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - generic [ref=e104]:
+                - paragraph [ref=e105]: MCP-native from day one
+                - paragraph [ref=e106]: Not an adapter. Not a plugin. MCP is the architectural primitive — every agent, every tool call, every data connection.
+            - listitem [ref=e107]:
+              - generic [ref=e109]:
+                - paragraph [ref=e110]: Model-agnostic by design
+                - paragraph [ref=e111]: Anthropic, OpenAI, Azure, Google, Cohere, Ollama. Swap the model without rewiring the agent. No lock-in.
+            - listitem [ref=e112]:
+              - generic [ref=e114]:
+                - paragraph [ref=e115]: Self-hostable with sovereignty
+                - paragraph [ref=e116]: On-premise, VPC, or hybrid. Your data never leaves your perimeter without explicit, auditable consent.
+      - generic [ref=e119]:
+        - generic [ref=e121]:
+          - generic [ref=e122]: 40%+
+          - generic [ref=e123]: of agentic AI projects cancelled by 2027
+          - generic [ref=e124]: Gartner, poll of 3,400 organisations
+        - generic [ref=e126]:
+          - generic [ref=e127]: $8.5B → $35B
+          - generic [ref=e128]: Agentic AI market, 2026 → 2030
+          - generic [ref=e129]: Deloitte 2026 TMT Predictions
+        - generic [ref=e131]:
+          - generic [ref=e132]: Aug 2, 2026
+          - generic [ref=e133]: EU AI Act high-risk deadline
+          - generic [ref=e134]: EU AI Act, Article 113
+        - generic [ref=e136]:
+          - generic [ref=e137]: 1.7x
+          - generic [ref=e138]: Average enterprise AI ROI in 12–18 months
+          - generic [ref=e139]: Industry composite
+        - generic [ref=e141]:
+          - generic [ref=e142]: 18,500+
+          - generic [ref=e143]: Salesforce Agentforce deals signed
+          - generic [ref=e144]: Salesforce, April 2026
+        - generic [ref=e146]:
+          - generic [ref=e147]: 78%
+          - generic [ref=e148]: Enterprise AI teams with MCP-backed agents in production
+          - generic [ref=e149]: CData / MCP Foundation, Q2 2026
+      - generic [ref=e151]:
+        - generic [ref=e153]:
+          - paragraph [ref=e154]: Platform
+          - heading "Six pillars. One control plane." [level=2] [ref=e155]
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - paragraph [ref=e162]: MCP Fabric — Live Connections
+                - generic [ref=e163]: ● 10 nodes active
+              - img [ref=e165]:
+                - generic [ref=e190]: NXπ
+                - generic [ref=e193] [cursor=pointer]: SAP HANA
+                - generic [ref=e196] [cursor=pointer]: S/4HANA
+                - generic [ref=e199] [cursor=pointer]: Salesforce
+                - generic [ref=e202] [cursor=pointer]: MuleSoft
+                - generic [ref=e205] [cursor=pointer]: PostgreSQL
+                - generic [ref=e208] [cursor=pointer]: MongoDB
+                - generic [ref=e211] [cursor=pointer]: Snowflake
+                - generic [ref=e214] [cursor=pointer]: S3
+                - generic [ref=e217] [cursor=pointer]: Anthropic
+                - generic [ref=e220] [cursor=pointer]: Ollama
+              - generic [ref=e221]:
+                - generic [ref=e222]: ERP
+                - generic [ref=e223]: CRM
+                - generic [ref=e224]: Database
+                - generic [ref=e225]: Cloud
+                - generic [ref=e226]: LLM
+            - generic [ref=e227]:
+              - paragraph [ref=e228]: Platform
+              - heading "MCP Integration Fabric" [level=3] [ref=e229]
+              - paragraph [ref=e230]: Connect SAP, Salesforce, databases, and 17,000+ MCP servers through a single governed gateway. Every tool call is authenticated, logged, and rate-controlled.
+            - list [ref=e231]:
+              - listitem [ref=e232]: 17,468+ MCP servers indexed
+              - listitem [ref=e234]: 97M+ monthly SDK downloads
+              - listitem [ref=e236]: Native SAP HANA Cloud & S/4HANA connectors
+            - link "Learn more" [ref=e238] [cursor=pointer]:
+              - /url: /platform/mcp-fabric
+              - text: Learn more
+              - img [ref=e239]
+          - generic [ref=e241]:
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - paragraph [ref=e246]: Multi-Agent Orchestration
+                - button "Run" [ref=e248]:
+                  - img [ref=e249]
+                  - text: Run
+              - generic [ref=e251]:
+                - generic [ref=e252]:
+                  - generic [ref=e254]: Idle
+                  - paragraph [ref=e255]: SAP Agent
+                  - paragraph [ref=e256]: VBAK · VBAP tables
+                - generic [ref=e257]:
+                  - generic [ref=e259]: Idle
+                  - paragraph [ref=e260]: Salesforce Agent
+                  - paragraph [ref=e261]: Opportunity · Account
+                - generic [ref=e262]:
+                  - generic [ref=e264]: Idle
+                  - paragraph [ref=e265]: Merger Agent
+                  - paragraph [ref=e266]: Synthesizes · Reports
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - paragraph [ref=e270]: Console
+                  - generic [ref=e271]: $ awaiting run…
+                - generic [ref=e272]:
+                  - paragraph [ref=e273]: Call Tree
+                  - generic [ref=e274]: $ awaiting run…
+            - generic [ref=e275]:
+              - paragraph [ref=e276]: Platform
+              - heading "Multi-Agent Orchestration" [level=3] [ref=e277]
+              - paragraph [ref=e278]: Coordinate fleets of specialised agents across tasks, with token budgets enforced at runtime and a full audit trail for every inter-agent message.
+            - list [ref=e279]:
+              - listitem [ref=e280]: Parallel and sequential agent graphs
+              - listitem [ref=e282]: Token-budget enforcement
+              - listitem [ref=e284]: Human-in-the-loop approval gates
+            - link "Learn more" [ref=e286] [cursor=pointer]:
+              - /url: /platform/orchestration
+              - text: Learn more
+              - img [ref=e287]
+          - generic [ref=e289]:
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - generic [ref=e294]:
+                  - img [ref=e295]
+                  - textbox "Enter search query…" [ref=e298]: Q3 sales pipeline reconciliation against SAP billing
+                - button "Search" [ref=e299]:
+                  - img [ref=e300]
+                  - text: Search
+              - paragraph [ref=e303]: Press Search or hit Enter to run the hybrid retrieval demo
+            - generic [ref=e304]:
+              - paragraph [ref=e305]: Platform
+              - heading "Hybrid RAG" [level=3] [ref=e306]
+              - paragraph [ref=e307]: RRF fusion across dense vector and BM25 sparse retrieval delivers 91%+ recall on enterprise corpora. Freshness-weighted re-ranking keeps answers current.
+            - list [ref=e308]:
+              - listitem [ref=e309]: 91%+ retrieval recall
+              - listitem [ref=e311]: pgvector + BM25 + RRF fusion
+              - listitem [ref=e313]: Role-scoped document access
+            - link "Learn more" [ref=e315] [cursor=pointer]:
+              - /url: /platform/rag
+              - text: Learn more
+              - img [ref=e316]
+          - generic [ref=e318]:
+            - generic [ref=e321]:
+              - generic [ref=e322]:
+                - button "Play" [ref=e323]:
+                  - img [ref=e324]
+                  - text: Play
+                - button "Reset" [ref=e326]:
+                  - img [ref=e327]
+                  - text: Reset
+              - generic [ref=e331]:
+                - generic [ref=e332]:
+                  - generic [ref=e333]:
+                    - generic [ref=e335]: ⏰
+                    - generic [ref=e336]: Cron
+                  - img [ref=e338]
+                - generic [ref=e340]:
+                  - generic [ref=e341]:
+                    - generic [ref=e343]: 🗄️
+                    - generic [ref=e344]: SAP Tool
+                  - img [ref=e346]
+                - generic [ref=e348]:
+                  - generic [ref=e349]:
+                    - generic [ref=e351]: ✦
+                    - generic [ref=e352]: LLM
+                  - img [ref=e354]
+                - generic [ref=e356]:
+                  - generic [ref=e357]:
+                    - generic [ref=e359]: ◇
+                    - generic [ref=e360]: Condition
+                  - img [ref=e362]
+                - generic [ref=e364]:
+                  - generic [ref=e365]:
+                    - generic [ref=e367]: ☁
+                    - generic [ref=e368]: Salesforce
+                  - img [ref=e370]
+                - generic [ref=e373]:
+                  - generic [ref=e375]: 📤
+                  - generic [ref=e376]: Output
+              - generic [ref=e377]:
+                - paragraph [ref=e378]: Execution Log
+                - paragraph [ref=e379]: Press Play to start the workflow…
+            - generic [ref=e380]:
+              - paragraph [ref=e381]: Platform
+              - heading "Workflow Automation" [level=3] [ref=e382]
+              - paragraph [ref=e383]: Visual workflow builder connects any MCP-capable system. Agent steps handle exceptions. Approval nodes integrate with Slack, Teams, and ServiceNow.
+            - list [ref=e384]:
+              - listitem [ref=e385]: No-code visual builder
+              - listitem [ref=e387]: Exception-handling agent steps
+              - listitem [ref=e389]: SAP workflow integration
+            - link "Learn more" [ref=e391] [cursor=pointer]:
+              - /url: /platform/workflows
+              - text: Learn more
+              - img [ref=e392]
+          - generic [ref=e394]:
+            - generic [ref=e397]:
+              - generic [ref=e398]:
+                - img [ref=e399]
+                - generic [ref=e403]: Unified Data Layer
+                - generic [ref=e404]: Sub-200ms · Data stays in place · No replication
+              - generic [ref=e406]:
+                - button "Relational PostgreSQL" [ref=e407] [cursor=pointer]:
+                  - generic [ref=e408]: Relational
+                  - generic [ref=e409]: PostgreSQL
+                - button "Document MongoDB" [ref=e410] [cursor=pointer]:
+                  - generic [ref=e411]: Document
+                  - generic [ref=e412]: MongoDB
+                - button "Key-Value Redis" [ref=e413] [cursor=pointer]:
+                  - generic [ref=e414]: Key-Value
+                  - generic [ref=e415]: Redis
+                - button "Graph Neo4j" [ref=e416] [cursor=pointer]:
+                  - generic [ref=e417]: Graph
+                  - generic [ref=e418]: Neo4j
+                - button "Vector pgvector" [ref=e419] [cursor=pointer]:
+                  - generic [ref=e420]: Vector
+                  - generic [ref=e421]: pgvector
+                - button "Files S3 / Blob" [ref=e422] [cursor=pointer]:
+                  - generic [ref=e423]: Files
+                  - generic [ref=e424]: S3 / Blob
+                - button "Streams Kafka" [ref=e425] [cursor=pointer]:
+                  - generic [ref=e426]: Streams
+                  - generic [ref=e427]: Kafka
+              - generic [ref=e429]:
+                - generic [ref=e430]:
+                  - generic [ref=e431]: PostgreSQL
+                  - generic [ref=e432]: · sql
+                - code [ref=e439]: SELECT o.VBELN, o.NETWR, c.NAME1 FROM VBAK o JOIN KNA1 c ON o.KUNNR = c.KUNNR WHERE o.ERDAT >= '2026-01-01' AND o.NETWR > 100000 ORDER BY o.NETWR DESC LIMIT 50;
+            - generic [ref=e440]:
+              - paragraph [ref=e441]: Platform
+              - heading "Unified Data Layer" [level=3] [ref=e442]
+              - paragraph [ref=e443]: Abstraction across SAP, Salesforce, PostgreSQL, MongoDB, Neo4j, Snowflake, and S3. Query in natural language. Data never replicates without consent.
+            - list [ref=e444]:
+              - listitem [ref=e445]: SQL · NoSQL · Graph · Vector · Object
+              - listitem [ref=e447]: Semantic + relational query fusion
+              - listitem [ref=e449]: Consent-gated data replication
+            - link "Learn more" [ref=e451] [cursor=pointer]:
+              - /url: /platform/data-layer
+              - text: Learn more
+              - img [ref=e452]
+          - generic [ref=e454]:
+            - generic [ref=e457]:
+              - generic [ref=e458]:
+                - img [ref=e459]
+                - generic [ref=e461]: Zero-Trust Governance
+                - generic [ref=e462]: Click a role to inspect its policy
+              - generic [ref=e464]:
+                - table [ref=e465]:
+                  - rowgroup [ref=e466]:
+                    - row "Role Models MCP Servers Tools Data Scope Audit Log" [ref=e467]:
+                      - columnheader "Role" [ref=e468]
+                      - columnheader "Models" [ref=e469]
+                      - columnheader "MCP Servers" [ref=e470]
+                      - columnheader "Tools" [ref=e471]
+                      - columnheader "Data Scope" [ref=e472]
+                      - columnheader "Audit Log" [ref=e473]
+                  - rowgroup [ref=e474]:
+                    - row "Admin" [ref=e475] [cursor=pointer]:
+                      - cell "Admin" [ref=e476]
+                      - cell [ref=e477]:
+                        - img [ref=e479]
+                      - cell [ref=e481]:
+                        - img [ref=e483]
+                      - cell [ref=e485]:
+                        - img [ref=e487]
+                      - cell [ref=e489]:
+                        - img [ref=e491]
+                      - cell [ref=e493]:
+                        - img [ref=e495]
+                    - row "Finance Analyst" [ref=e497] [cursor=pointer]:
+                      - cell "Finance Analyst" [ref=e498]
+                      - cell [ref=e499]:
+                        - img [ref=e501]
+                      - cell [ref=e503]:
+                        - img [ref=e505]
+                      - cell [ref=e506]:
+                        - img [ref=e508]
+                      - cell [ref=e509]:
+                        - img [ref=e511]
+                      - cell [ref=e513]:
+                        - img [ref=e515]
+                    - row "Sales Rep ◆" [ref=e516] [cursor=pointer]:
+                      - cell "Sales Rep" [ref=e517]
+                      - cell [ref=e518]:
+                        - img [ref=e520]
+                      - cell [ref=e522]:
+                        - img [ref=e524]
+                      - cell [ref=e525]:
+                        - img [ref=e527]
+                      - cell "◆" [ref=e528]:
+                        - generic [ref=e530]: ◆
+                      - cell [ref=e531]:
+                        - img [ref=e533]
+                    - row "Auditor" [ref=e536] [cursor=pointer]:
+                      - cell "Auditor" [ref=e537]
+                      - cell [ref=e538]:
+                        - img [ref=e540]
+                      - cell [ref=e542]:
+                        - img [ref=e544]
+                      - cell [ref=e547]:
+                        - img [ref=e549]
+                      - cell [ref=e552]:
+                        - img [ref=e554]
+                      - cell [ref=e556]:
+                        - img [ref=e558]
+                    - row "Developer ◆" [ref=e560] [cursor=pointer]:
+                      - cell "Developer" [ref=e561]
+                      - cell [ref=e562]:
+                        - img [ref=e564]
+                      - cell [ref=e566]:
+                        - img [ref=e568]
+                      - cell [ref=e569]:
+                        - img [ref=e571]
+                      - cell "◆" [ref=e573]:
+                        - generic [ref=e575]: ◆
+                      - cell [ref=e576]:
+                        - img [ref=e578]
+                - generic [ref=e579]:
+                  - generic [ref=e580]:
+                    - img [ref=e581]
+                    - text: Full
+                  - generic [ref=e583]:
+                    - img [ref=e584]
+                    - text: Partial
+                  - generic [ref=e585]:
+                    - generic [ref=e586]: ◆
+                    - text: Restricted
+                  - generic [ref=e587]:
+                    - img [ref=e588]
+                    - text: None
+              - generic [ref=e596]: Live Audit Feed
+            - generic [ref=e598]:
+              - paragraph [ref=e599]: Platform
+              - heading "Zero-Trust Governance" [level=3] [ref=e600]
+              - paragraph [ref=e601]: Policy engine enforces RBAC, data access scope, and model guardrails at runtime. Complete audit trail exported to your SIEM or data warehouse.
+            - list [ref=e602]:
+              - listitem [ref=e603]: EU AI Act · SOC 2 · GDPR · HIPAA · SOX
+              - listitem [ref=e605]: SIEM-compatible audit export
+              - listitem [ref=e607]: Attribute-based access control
+            - link "Learn more" [ref=e609] [cursor=pointer]:
+              - /url: /platform/governance
+              - text: Learn more
+              - img [ref=e610]
+      - generic [ref=e613]:
+        - generic [ref=e615]:
+          - paragraph [ref=e616]: First-class integration
+          - heading "SAP and Salesforce, finally unified under AI." [level=2] [ref=e617]
+        - generic [ref=e618]:
+          - generic [ref=e620]:
+            - generic [ref=e621]:
+              - img [ref=e623]
+              - generic [ref=e627]: SAP Integration
+            - heading "The first AI platform purpose-built for SAP." [level=3] [ref=e628]
+            - paragraph [ref=e629]: Native connectors for SAP HANA Cloud, S/4HANA, BTP, and ECC. MCP tools expose FI, CO, MM, SD, and HR modules as governed agent capabilities. Query financial data in natural language. Every agent action creates a change document.
+            - list [ref=e630]:
+              - listitem [ref=e631]: SAP HANA Cloud vector store
+              - listitem [ref=e633]: S/4HANA native MCP tools
+              - listitem [ref=e635]: BTP integration suite bridge
+              - listitem [ref=e637]: ECC legacy connector
+              - listitem [ref=e639]: Approval workflow integration
+            - link "SAP integration details" [ref=e641] [cursor=pointer]:
+              - /url: /integrations/sap
+              - text: SAP integration details
+              - img [ref=e642]
+          - generic [ref=e645]:
+            - generic [ref=e646]:
+              - img [ref=e648]
+              - generic [ref=e651]: Salesforce Integration
+            - heading "Agentforce extends further when the data layer is complete." [level=3] [ref=e652]
+            - paragraph [ref=e653]: NXπ connects Salesforce CRM, Revenue Cloud, and Marketing Cloud to SAP, databases, and knowledge bases via MCP. Salesforce announced native MCP GA in April 2026. NXπ extends that to every system in your stack.
+            - list [ref=e654]:
+              - listitem [ref=e655]: Agentforce MCP bridge
+              - listitem [ref=e657]: Revenue Cloud integration
+              - listitem [ref=e659]: Marketing Cloud data sync
+              - listitem [ref=e661]: Salesforce Data Cloud connector
+              - listitem [ref=e663]: Cross-system 360° customer view
+            - link "Salesforce integration details" [ref=e665] [cursor=pointer]:
+              - /url: /integrations/salesforce
+              - text: Salesforce integration details
+              - img [ref=e666]
+      - generic [ref=e670]:
+        - generic [ref=e672]:
+          - paragraph [ref=e673]: Architecture
+          - heading "Four layers. Infinite reach." [level=2] [ref=e674]
+          - paragraph [ref=e675]: NXπ is built as four composable layers — client, orchestration, AI core, and data. Each layer is independently scalable and replaceable without rewiring the rest.
+          - link "Full architecture diagram" [ref=e676] [cursor=pointer]:
+            - /url: /architecture
+            - text: Full architecture diagram
+            - img [ref=e677]
+        - generic [ref=e680]:
+          - generic [ref=e681]:
+            - button "Client Layer Web · Mobile · API" [ref=e682]:
+              - paragraph [ref=e683]: Client Layer
+              - paragraph [ref=e684]: Web · Mobile · API
+            - button "API & Orchestration Next.js · Agent Router · MCP Host" [ref=e685]:
+              - paragraph [ref=e686]: API & Orchestration
+              - paragraph [ref=e687]: Next.js · Agent Router · MCP Host
+            - button "AI Core LLM Providers · RAG · Agents" [ref=e688]:
+              - paragraph [ref=e689]: AI Core
+              - paragraph [ref=e690]: LLM Providers · RAG · Agents
+            - button "Data & Storage SAP · Salesforce · SQL · NoSQL · Vector" [ref=e691]:
+              - paragraph [ref=e692]: Data & Storage
+              - paragraph [ref=e693]: SAP · Salesforce · SQL · NoSQL · Vector
+          - generic [ref=e695]:
+            - paragraph [ref=e696]: API & Orchestration
+            - paragraph [ref=e697]: The orchestration layer routes requests to the right agents, manages multi-agent coordination, enforces token budgets, and logs every action to the audit trail.
+      - generic [ref=e699]:
+        - generic [ref=e701]:
+          - paragraph [ref=e702]: Live demo
+          - heading "See an agent answer a real finance question." [level=2] [ref=e703]
+        - generic [ref=e706]:
+          - generic [ref=e707]:
+            - img [ref=e708]
+            - generic [ref=e711]: NXπ Agent · SAP + Salesforce Fusion
+            - generic [ref=e712]: simulation
+          - generic [ref=e713]:
+            - textbox "Ask the NXπ agent a question (simulation)" [ref=e714]:
+              - /placeholder: What is Q3 revenue forecast vs SAP billing reconciliation?
+            - button "Run agent simulation" [ref=e715]:
+              - img [ref=e716]
+      - generic [ref=e720]:
+        - generic [ref=e722]:
+          - paragraph [ref=e723]: Solutions
+          - heading "Built for the role, system, and industry you operate in." [level=2] [ref=e724]
+        - generic [ref=e725]:
+          - tablist "Solutions categories" [ref=e726]:
+            - tab "By Role" [selected] [ref=e727]
+            - tab "By System" [ref=e728]
+            - tab "By Industry" [ref=e729]
+          - generic [ref=e730]:
+            - generic [ref=e731]:
+              - button "CFO" [pressed] [ref=e732]
+              - button "CTO / CIO" [ref=e733]
+              - button "CISO" [ref=e734]
+              - button "COO" [ref=e735]
+            - tabpanel "By Role" [ref=e736]:
+              - heading "Close the AI ROI gap before the board asks." [level=3] [ref=e737]
+              - paragraph [ref=e738]: NXπ connects GL, ERP, and FP&A agents to real-time financial data — SAP S/4HANA, Salesforce Revenue Cloud, and SQL warehouses. Every agent action is logged with a cost code. Your AI investment closes the books on itself.
+              - generic [ref=e739]:
+                - generic [ref=e740]: Finance AI
+                - generic [ref=e741]: Audit trail
+                - generic [ref=e742]: SAP S/4HANA
+      - generic [ref=e747]:
+        - generic [ref=e748]:
+          - generic [ref=e749]:
+            - img [ref=e750]
+            - paragraph [ref=e753]: Compliance
+          - heading "EU AI Act. SOC 2. GDPR. HIPAA. SOX." [level=2] [ref=e754]
+          - paragraph [ref=e755]: Compliance is not a checklist you fill before go-live. It is a runtime property. NXπ enforces policy at every agent call, every data access, every model invocation — and exports a complete audit trail to your SIEM.
+        - generic [ref=e756]:
+          - paragraph [ref=e757]: Deployment options
+          - generic [ref=e760]:
+            - paragraph [ref=e761]: Cloud-hosted
+            - paragraph [ref=e762]: SOC 2 Type II, multi-tenant, shared responsibility
+          - generic [ref=e765]:
+            - paragraph [ref=e766]: VPC-isolated
+            - paragraph [ref=e767]: Single-tenant in your AWS, Azure, or GCP account
+          - generic [ref=e770]:
+            - paragraph [ref=e771]: On-premise
+            - paragraph [ref=e772]: Air-gapped, no outbound calls, full data sovereignty
+      - generic [ref=e776]:
+        - blockquote [ref=e777]:
+          - paragraph [ref=e778]: "\"AI that survives an audit, a board meeting, and August 2, 2026.\""
+        - paragraph [ref=e779]: The NXπ promise — measurable AI ROI with full regulatory compliance from day one.
+      - generic [ref=e784]:
+        - paragraph [ref=e785]: Get started
+        - heading "The AI control plane your enterprise has been waiting for." [level=2] [ref=e786]
+        - paragraph [ref=e787]: Connect your SAP, Salesforce, and every data asset. Deploy governed agents. Close the ROI gap before the board asks.
+        - generic [ref=e788]:
+          - link "Book an executive briefing" [ref=e789] [cursor=pointer]:
+            - /url: /contact
+          - link "See the architecture" [ref=e790] [cursor=pointer]:
+            - /url: /architecture
+            - text: See the architecture
+            - img [ref=e791]
+  - contentinfo [ref=e793]:
+    - generic [ref=e794]:
+      - generic [ref=e795]:
+        - generic [ref=e796]:
+          - generic [ref=e797]:
+            - img "NXπ logo mark" [ref=e798]
+            - generic [ref=e803]: NXπ
+          - paragraph [ref=e804]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e809] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e810]:
+          - heading "Platform" [level=3] [ref=e811]
+          - list [ref=e812]:
+            - listitem [ref=e813]:
+              - link "MCP Fabric" [ref=e814] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e815]:
+              - link "Orchestration" [ref=e816] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e817]:
+              - link "Hybrid RAG" [ref=e818] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e819]:
+              - link "Workflows" [ref=e820] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e821]:
+              - link "Data Layer" [ref=e822] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e823]:
+              - link "Governance" [ref=e824] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e825]:
+          - heading "Solutions" [level=3] [ref=e826]
+          - list [ref=e827]:
+            - listitem [ref=e828]:
+              - link "NXπ for SAP" [ref=e829] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e830]:
+              - link "NXπ for Salesforce" [ref=e831] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e832]:
+              - link "SAP + Salesforce Fusion" [ref=e833] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e834]:
+              - link "For the CFO" [ref=e835] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e836]:
+              - link "For the CISO" [ref=e837] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e838]:
+          - heading "Company" [level=3] [ref=e839]
+          - list [ref=e840]:
+            - listitem [ref=e841]:
+              - link "About" [ref=e842] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e843]:
+              - link "Customers" [ref=e844] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e845]:
+              - link "Blog" [ref=e846] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e847]:
+              - link "Changelog" [ref=e848] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e849]:
+              - link "Contact" [ref=e850] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e851]:
+          - heading "Legal" [level=3] [ref=e852]
+          - list [ref=e853]:
+            - listitem [ref=e854]:
+              - link "Privacy Policy" [ref=e855] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e856]:
+              - link "Terms of Service" [ref=e857] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e858]:
+              - link "DPA" [ref=e859] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e860]:
+              - link "EU AI Act Readiness" [ref=e861] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e862]:
+              - link "Security" [ref=e863] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e864]:
+        - generic [ref=e865]:
+          - paragraph [ref=e866]: © 2026 Negentrophi, Inc. All rights reserved.
+          - generic "Marketing visualization — not real telemetry" [ref=e867]:
+            - generic [ref=e869]: 847,293,441
+            - generic [ref=e870]: tokens processed
+        - link "security@nxpi.ai" [ref=e871] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e877] [cursor=pointer]:
+    - img [ref=e878]
+  - alert [ref=e881]
+  - generic [ref=e882]:
+    - paragraph [ref=e883]:
+      - text: We use privacy-preserving analytics (no cookies, no tracking pixels). Your DNT preference is respected.
+      - link "Privacy Policy" [ref=e884] [cursor=pointer]:
+        - /url: /legal/privacy
+    - button "Dismiss" [ref=e885]:
+      - img [ref=e886]

@@ -1,0 +1,159 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - navigation [ref=e32]:
+        - link "Solutions" [ref=e33] [cursor=pointer]:
+          - /url: /solutions
+        - generic [ref=e34]: /
+        - generic [ref=e35]: Financial Services
+      - generic [ref=e37]:
+        - generic [ref=e38]: Financial Services
+        - heading "AI that survives an audit — and a board meeting." [level=1] [ref=e39]
+        - paragraph [ref=e40]: Financial institutions face simultaneous pressure from regulators, auditors, and boards. NXπ delivers AI with the governance controls required for Basel III, MiFID II, and the EU AI Act — with every decision logged, every source cited, and every model action auditable.
+      - generic [ref=e41]:
+        - heading "Why NXπ for Financial Services" [level=2] [ref=e42]
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: "01"
+            - heading "Audit-grade action logging" [level=3] [ref=e46]
+            - paragraph [ref=e47]: Every AI decision logged with full lineage — model, prompt, context, output, timestamp — meeting SOX and MiFID II requirements.
+          - generic [ref=e48]:
+            - generic [ref=e49]: "02"
+            - heading "Model risk governance" [level=3] [ref=e50]
+            - paragraph [ref=e51]: Automated model risk documentation, validation workflows, and SR 11-7 compliance tracking for every AI model in production.
+          - generic [ref=e52]:
+            - generic [ref=e53]: "03"
+            - heading "Real-time regulatory monitoring" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Agents monitor regulatory feeds, flag changes affecting your portfolio, and draft impact assessments before your compliance team even knows about the update.
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - heading "Regulatory focus" [level=3] [ref=e60]
+          - paragraph [ref=e61]: Basel III · MiFID II · EU AI Act · SOX
+        - link "See security overview →" [ref=e63] [cursor=pointer]:
+          - /url: /security
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: See NXπ in your environment
+          - paragraph [ref=e68]: 30-minute briefing tailored for Financial Services — no slides, live system.
+        - link "Book a briefing →" [ref=e69] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e70]:
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - img "NXπ logo mark" [ref=e75]
+            - generic [ref=e80]: NXπ
+          - paragraph [ref=e81]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e86] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e87]:
+          - heading "Platform" [level=3] [ref=e88]
+          - list [ref=e89]:
+            - listitem [ref=e90]:
+              - link "MCP Fabric" [ref=e91] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e92]:
+              - link "Orchestration" [ref=e93] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e94]:
+              - link "Hybrid RAG" [ref=e95] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e96]:
+              - link "Workflows" [ref=e97] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e98]:
+              - link "Data Layer" [ref=e99] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e100]:
+              - link "Governance" [ref=e101] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e102]:
+          - heading "Solutions" [level=3] [ref=e103]
+          - list [ref=e104]:
+            - listitem [ref=e105]:
+              - link "NXπ for SAP" [ref=e106] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e107]:
+              - link "NXπ for Salesforce" [ref=e108] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e109]:
+              - link "SAP + Salesforce Fusion" [ref=e110] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e111]:
+              - link "For the CFO" [ref=e112] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e113]:
+              - link "For the CISO" [ref=e114] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e115]:
+          - heading "Company" [level=3] [ref=e116]
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - link "About" [ref=e119] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e120]:
+              - link "Customers" [ref=e121] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e122]:
+              - link "Blog" [ref=e123] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e124]:
+              - link "Changelog" [ref=e125] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e126]:
+              - link "Contact" [ref=e127] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e128]:
+          - heading "Legal" [level=3] [ref=e129]
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "Privacy Policy" [ref=e132] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e133]:
+              - link "Terms of Service" [ref=e134] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e135]:
+              - link "DPA" [ref=e136] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e137]:
+              - link "EU AI Act Readiness" [ref=e138] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e139]:
+              - link "Security" [ref=e140] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e141]:
+        - paragraph [ref=e143]: © 2026 Negentrophi, Inc. All rights reserved.
+        - link "security@nxpi.ai" [ref=e144] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e150] [cursor=pointer]:
+    - img [ref=e151]

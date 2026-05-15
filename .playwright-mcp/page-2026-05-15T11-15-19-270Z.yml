@@ -1,0 +1,185 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]: Solutions
+          - heading "Every CXO. Every system. Every industry." [level=1] [ref=e34]:
+            - text: Every CXO.
+            - text: Every system.
+            - text: Every industry.
+          - paragraph [ref=e35]: NXπ is the AI control plane that meets you where you are — by role, by system, or by sector. One governed platform. Every model. Every data source.
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - button "By Role" [ref=e38]
+            - button "By System" [ref=e39]
+            - button "By Industry" [ref=e40]
+          - generic [ref=e41]:
+            - link "CFO Transparent Token Economics. Every prompt costed. Every agent budgeted. Every ROI dollar measurable. Explore →" [ref=e42] [cursor=pointer]:
+              - /url: /solutions/role/cfo
+              - generic [ref=e43]: CFO
+              - heading "Transparent Token Economics." [level=3] [ref=e44]
+              - paragraph [ref=e45]: Every prompt costed. Every agent budgeted. Every ROI dollar measurable.
+              - generic [ref=e46]: Explore →
+            - link "CTO / CIO End the Tool Sprawl. One platform. Ten LLM providers. Forty models. 114+ API endpoints. Explore →" [ref=e47] [cursor=pointer]:
+              - /url: /solutions/role/cto-cio
+              - generic [ref=e48]: CTO / CIO
+              - heading "End the Tool Sprawl." [level=3] [ref=e49]
+              - paragraph [ref=e50]: One platform. Ten LLM providers. Forty models. 114+ API endpoints.
+              - generic [ref=e51]: Explore →
+            - link "CEO Strategic AI Consolidation. Replace three to five point AI tools with one governed control plane. Explore →" [ref=e52] [cursor=pointer]:
+              - /url: /solutions/role/ceo
+              - generic [ref=e53]: CEO
+              - heading "Strategic AI Consolidation." [level=3] [ref=e54]
+              - paragraph [ref=e55]: Replace three to five point AI tools with one governed control plane.
+              - generic [ref=e56]: Explore →
+            - link "CISO Zero-Trust by Default. EU AI Act-ready. SOC 2-aligned. 100% action auditability. Explore →" [ref=e57] [cursor=pointer]:
+              - /url: /solutions/role/ciso
+              - generic [ref=e58]: CISO
+              - heading "Zero-Trust by Default." [level=3] [ref=e59]
+              - paragraph [ref=e60]: EU AI Act-ready. SOC 2-aligned. 100% action auditability.
+              - generic [ref=e61]: Explore →
+            - link "CDO One Data Fabric, Every Source. Real-time SAP. Real-time Salesforce. Hybrid RAG. Sub-200ms search. Explore →" [ref=e62] [cursor=pointer]:
+              - /url: /solutions/role/cdo
+              - generic [ref=e63]: CDO
+              - heading "One Data Fabric, Every Source." [level=3] [ref=e64]
+              - paragraph [ref=e65]: Real-time SAP. Real-time Salesforce. Hybrid RAG. Sub-200ms search.
+              - generic [ref=e66]: Explore →
+            - link "COO Process Automation at Enterprise Scale. Visual workflows, cron schedules, webhook triggers, DAG execution. Explore →" [ref=e67] [cursor=pointer]:
+              - /url: /solutions/role/coo
+              - generic [ref=e68]: COO
+              - heading "Process Automation at Enterprise Scale." [level=3] [ref=e69]
+              - paragraph [ref=e70]: Visual workflows, cron schedules, webhook triggers, DAG execution.
+              - generic [ref=e71]: Explore →
+            - link "CRO / CMO Customer Intelligence as a Runtime. SAP order history + Salesforce CRM + market signals + your knowledge base — fused. Explore →" [ref=e72] [cursor=pointer]:
+              - /url: /solutions/role/cro-cmo
+              - generic [ref=e73]: CRO / CMO
+              - heading "Customer Intelligence as a Runtime." [level=3] [ref=e74]
+              - paragraph [ref=e75]: SAP order history + Salesforce CRM + market signals + your knowledge base — fused.
+              - generic [ref=e76]: Explore →
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - paragraph [ref=e80]: Not sure where to start?
+          - paragraph [ref=e81]: Book a 30-minute architecture call with the NXπ team.
+        - link "Book a briefing →" [ref=e82] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e83]:
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - img "NXπ logo mark" [ref=e88]
+            - generic [ref=e93]: NXπ
+          - paragraph [ref=e94]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e99] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e100]:
+          - heading "Platform" [level=3] [ref=e101]
+          - list [ref=e102]:
+            - listitem [ref=e103]:
+              - link "MCP Fabric" [ref=e104] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e105]:
+              - link "Orchestration" [ref=e106] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e107]:
+              - link "Hybrid RAG" [ref=e108] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e109]:
+              - link "Workflows" [ref=e110] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e111]:
+              - link "Data Layer" [ref=e112] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e113]:
+              - link "Governance" [ref=e114] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e115]:
+          - heading "Solutions" [level=3] [ref=e116]
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - link "NXπ for SAP" [ref=e119] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e120]:
+              - link "NXπ for Salesforce" [ref=e121] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e122]:
+              - link "SAP + Salesforce Fusion" [ref=e123] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e124]:
+              - link "For the CFO" [ref=e125] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e126]:
+              - link "For the CISO" [ref=e127] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e128]:
+          - heading "Company" [level=3] [ref=e129]
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "About" [ref=e132] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e133]:
+              - link "Customers" [ref=e134] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e135]:
+              - link "Blog" [ref=e136] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e137]:
+              - link "Changelog" [ref=e138] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e139]:
+              - link "Contact" [ref=e140] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e141]:
+          - heading "Legal" [level=3] [ref=e142]
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - link "Privacy Policy" [ref=e145] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e146]:
+              - link "Terms of Service" [ref=e147] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e148]:
+              - link "DPA" [ref=e149] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e150]:
+              - link "EU AI Act Readiness" [ref=e151] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e152]:
+              - link "Security" [ref=e153] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e154]:
+        - paragraph [ref=e156]: © 2026 Negentrophi, Inc. All rights reserved.
+        - link "security@nxpi.ai" [ref=e157] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e163] [cursor=pointer]:
+    - img [ref=e164]

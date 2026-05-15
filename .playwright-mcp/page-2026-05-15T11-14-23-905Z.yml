@@ -1,0 +1,206 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e34]:
+        - generic [ref=e36]: Customers
+        - heading "Regulated enterprises, real results." [level=1] [ref=e39]
+        - paragraph [ref=e41]: How enterprise teams in financial services, manufacturing, and technology use NXπ to connect SAP, Salesforce, and their data — under one governed AI control plane.
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - generic [ref=e48]: Financial Services
+              - generic [ref=e49]: 12,000 employees
+            - heading "40% reduction in financial close cycle time." [level=2] [ref=e50]
+            - blockquote [ref=e51]:
+              - generic [ref=e52]: “
+              - paragraph [ref=e53]: NXπ connects our SAP billing data with Salesforce revenue recognition in one governed pipeline. What took four analysts three days now takes one agent four hours — with a full audit trail our CFO can show the board.
+              - generic [ref=e55]: — Controller, Global Financial Services Firm
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Key outcomes
+            - list [ref=e58]:
+              - listitem [ref=e59]:
+                - img [ref=e60]
+                - generic [ref=e62]: 40% reduction in close cycle time
+              - listitem [ref=e63]:
+                - img [ref=e64]
+                - generic [ref=e66]: 100% audit trail coverage
+              - listitem [ref=e67]:
+                - img [ref=e68]
+                - generic [ref=e70]: 3 analysts redeployed to strategic work
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]: Manufacturing
+              - generic [ref=e76]: 45,000 employees
+            - heading "Real-time supply chain risk detection across 200+ suppliers." [level=2] [ref=e77]
+            - blockquote [ref=e78]:
+              - generic [ref=e79]: “
+              - paragraph [ref=e80]: We were doing weekly batch analysis on SAP procurement data. NXπ gave us real-time risk scoring across our entire supplier network — with explanations our procurement team actually understands.
+              - generic [ref=e82]: — CDO, Global Manufacturing Enterprise
+          - generic [ref=e83]:
+            - paragraph [ref=e84]: Key outcomes
+            - list [ref=e85]:
+              - listitem [ref=e86]:
+                - img [ref=e87]
+                - generic [ref=e89]: Real-time vs weekly batch detection
+              - listitem [ref=e90]:
+                - img [ref=e91]
+                - generic [ref=e93]: 200+ suppliers monitored continuously
+              - listitem [ref=e94]:
+                - img [ref=e95]
+                - generic [ref=e97]: 15–25% procurement cost reduction
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]: Technology
+              - generic [ref=e103]: 3,200 employees
+            - heading "80% reduction in BI request backlog." [level=2] [ref=e104]
+            - blockquote [ref=e105]:
+              - generic [ref=e106]: “
+              - paragraph [ref=e107]: Our data team was buried in ad-hoc requests from finance, sales, and operations. NXπ's hybrid RAG lets any executive query across SAP and Salesforce in plain language — without touching our data team's queue.
+              - generic [ref=e109]: — CTO, Enterprise Software Company
+          - generic [ref=e110]:
+            - paragraph [ref=e111]: Key outcomes
+            - list [ref=e112]:
+              - listitem [ref=e113]:
+                - img [ref=e114]
+                - generic [ref=e116]: 80% reduction in BI backlog
+              - listitem [ref=e117]:
+                - img [ref=e118]
+                - generic [ref=e120]: Sub-200ms query response time
+              - listitem [ref=e121]:
+                - img [ref=e122]
+                - generic [ref=e124]: $200K annual BI tooling savings
+      - generic [ref=e128]:
+        - paragraph [ref=e129]: “The most valuable AI use cases in the enterprise live in the join between systems — not inside any one of them.”
+        - paragraph [ref=e130]: NXπ Research, 2026
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - heading "See what NXπ can do for your organization." [level=2] [ref=e135]
+          - paragraph [ref=e136]: We run a 90-minute technical briefing with your team — architecture, security, and a live demo against your stack.
+        - generic [ref=e137]:
+          - link "Explore the platform" [ref=e138] [cursor=pointer]:
+            - /url: /platform
+          - link "Book a briefing" [ref=e139] [cursor=pointer]:
+            - /url: /contact
+  - contentinfo [ref=e140]:
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - img "NXπ logo mark" [ref=e145]
+            - generic [ref=e150]: NXπ
+          - paragraph [ref=e151]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e156] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e157]:
+          - heading "Platform" [level=3] [ref=e158]
+          - list [ref=e159]:
+            - listitem [ref=e160]:
+              - link "MCP Fabric" [ref=e161] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e162]:
+              - link "Orchestration" [ref=e163] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e164]:
+              - link "Hybrid RAG" [ref=e165] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e166]:
+              - link "Workflows" [ref=e167] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e168]:
+              - link "Data Layer" [ref=e169] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e170]:
+              - link "Governance" [ref=e171] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e172]:
+          - heading "Solutions" [level=3] [ref=e173]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "NXπ for SAP" [ref=e176] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e177]:
+              - link "NXπ for Salesforce" [ref=e178] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e179]:
+              - link "SAP + Salesforce Fusion" [ref=e180] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e181]:
+              - link "For the CFO" [ref=e182] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e183]:
+              - link "For the CISO" [ref=e184] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e185]:
+          - heading "Company" [level=3] [ref=e186]
+          - list [ref=e187]:
+            - listitem [ref=e188]:
+              - link "About" [ref=e189] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e190]:
+              - link "Customers" [ref=e191] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e192]:
+              - link "Blog" [ref=e193] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e194]:
+              - link "Changelog" [ref=e195] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e196]:
+              - link "Contact" [ref=e197] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e198]:
+          - heading "Legal" [level=3] [ref=e199]
+          - list [ref=e200]:
+            - listitem [ref=e201]:
+              - link "Privacy Policy" [ref=e202] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e203]:
+              - link "Terms of Service" [ref=e204] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e205]:
+              - link "DPA" [ref=e206] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e207]:
+              - link "EU AI Act Readiness" [ref=e208] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e209]:
+              - link "Security" [ref=e210] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e211]:
+        - paragraph [ref=e213]: © 2026 Negentrophi, Inc. All rights reserved.
+        - link "security@nxpi.ai" [ref=e214] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e220] [cursor=pointer]:
+    - img [ref=e221]

@@ -1,0 +1,204 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - link "← Blog" [ref=e36] [cursor=pointer]:
+            - /url: /blog
+          - generic [ref=e37]: /
+          - generic [ref=e38]: Compliance
+        - 'heading "August 2, 2026: what the EU AI Act high-risk deadline actually requires" [level=1] [ref=e39]'
+        - generic [ref=e40]:
+          - generic [ref=e41]: NXπ Research
+          - generic [ref=e42]: ·
+          - time [ref=e43]: April 1, 2026
+          - generic [ref=e44]: ·
+          - generic [ref=e45]: 8 min read
+      - article [ref=e47]:
+        - paragraph [ref=e48]: August 2, 2026 is the date by which organizations deploying high-risk AI systems in the EU must demonstrate compliance with the EU AI Act (Article 113). Many enterprise AI teams are behind.
+        - paragraph [ref=e49]: This post explains what the Act actually requires — without the legal fog.
+        - heading "What counts as high-risk?" [level=2] [ref=e50]
+        - paragraph [ref=e51]: "The EU AI Act classifies AI systems as high-risk if they are used in specific areas: employment (CV screening, performance monitoring), credit and insurance decisions, access to education, law enforcement, migration, and administration of justice."
+        - paragraph [ref=e52]: For most enterprise AI use cases — financial analysis, supply chain optimization, customer intelligence, workflow automation — the high-risk classification applies when the AI output directly informs a consequential decision about a person.
+        - paragraph [ref=e53]: An AI agent that generates financial close reports for CFO review is lower risk than one that automatically approves or rejects supplier invoices. The distinction is human oversight.
+        - heading "The six core requirements" [level=2] [ref=e54]
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]: "1"
+            - generic [ref=e58]:
+              - paragraph [ref=e59]: Risk management system
+              - paragraph [ref=e60]: A documented process for identifying, analyzing, and mitigating risks throughout the AI system lifecycle. Updated continuously.
+          - generic [ref=e61]:
+            - generic [ref=e62]: "2"
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: Data governance
+              - paragraph [ref=e65]: "Training data (and fine-tuning data) must be documented, assessed for bias, and subject to appropriate quality controls. For RAG systems: the knowledge base sources must be documented and auditable."
+          - generic [ref=e66]:
+            - generic [ref=e67]: "3"
+            - generic [ref=e68]:
+              - paragraph [ref=e69]: Technical documentation
+              - paragraph [ref=e70]: A comprehensive technical file describing the system's purpose, architecture, data flows, performance metrics, and limitations. Must be made available to regulators on request.
+          - generic [ref=e71]:
+            - generic [ref=e72]: "4"
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Record-keeping
+              - paragraph [ref=e75]: "Automatic logging sufficient to ensure traceability of outputs. For agentic AI: this means the full agent call tree, tool invocations, retrieved sources, and model outputs — for a defined retention period."
+          - generic [ref=e76]:
+            - generic [ref=e77]: "5"
+            - generic [ref=e78]:
+              - paragraph [ref=e79]: Transparency and user information
+              - paragraph [ref=e80]: Users must know they are interacting with an AI system. Outputs must be labeled as AI-generated when used in consequential decisions.
+          - generic [ref=e81]:
+            - generic [ref=e82]: "6"
+            - generic [ref=e83]:
+              - paragraph [ref=e84]: Human oversight
+              - paragraph [ref=e85]: High-risk systems must be designed to allow human oversight, correction, and overriding of AI outputs. The system must support — not undermine — human control.
+        - heading "What NXπ does" [level=2] [ref=e86]
+        - paragraph [ref=e87]: "NXπ is designed around these requirements, not retrofitted to them:"
+        - paragraph [ref=e88]:
+          - strong [ref=e89]: Record-keeping
+          - text: is handled by the append-only audit log — every agent run, every tool call, every retrieved document, every model response, written to your PostgreSQL with tamper-evident timestamps.
+        - paragraph [ref=e90]:
+          - strong [ref=e91]: Technical documentation
+          - text: "is generated from the platform's own configuration: MCP connections, model allowlists, RBAC policies, workflow DAGs — all machine-readable and exportable."
+        - paragraph [ref=e92]:
+          - strong [ref=e93]: Data governance
+          - text: for RAG is addressed through source attribution on every answer — the system records which documents informed each response, including document metadata and retrieval scores.
+        - paragraph [ref=e94]:
+          - strong [ref=e95]: Human oversight
+          - text: is built into the workflow builder — approval nodes can be inserted at any point in an automated workflow, requiring human sign-off before consequential actions execute.
+        - paragraph [ref=e96]: The August 2 deadline is not a one-time certification. It marks the beginning of ongoing compliance. Organizations that built their AI stack without audit infrastructure will spend the next 12–18 months retrofitting. Organizations that built on NXπ are already there.
+      - link "← Back to Blog" [ref=e98] [cursor=pointer]:
+        - /url: /blog
+  - contentinfo [ref=e99]:
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - img "NXπ logo mark" [ref=e104]
+            - generic [ref=e109]: NXπ
+          - paragraph [ref=e110]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e115] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e116]:
+          - heading "Platform" [level=3] [ref=e117]
+          - list [ref=e118]:
+            - listitem [ref=e119]:
+              - link "MCP Fabric" [ref=e120] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e121]:
+              - link "Orchestration" [ref=e122] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e123]:
+              - link "Hybrid RAG" [ref=e124] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e125]:
+              - link "Workflows" [ref=e126] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e127]:
+              - link "Data Layer" [ref=e128] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e129]:
+              - link "Governance" [ref=e130] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e131]:
+          - heading "Solutions" [level=3] [ref=e132]
+          - list [ref=e133]:
+            - listitem [ref=e134]:
+              - link "NXπ for SAP" [ref=e135] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e136]:
+              - link "NXπ for Salesforce" [ref=e137] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e138]:
+              - link "SAP + Salesforce Fusion" [ref=e139] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e140]:
+              - link "For the CFO" [ref=e141] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e142]:
+              - link "For the CISO" [ref=e143] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e144]:
+          - heading "Company" [level=3] [ref=e145]
+          - list [ref=e146]:
+            - listitem [ref=e147]:
+              - link "About" [ref=e148] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e149]:
+              - link "Customers" [ref=e150] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e151]:
+              - link "Blog" [ref=e152] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e153]:
+              - link "Changelog" [ref=e154] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e155]:
+              - link "Contact" [ref=e156] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e157]:
+          - heading "Legal" [level=3] [ref=e158]
+          - list [ref=e159]:
+            - listitem [ref=e160]:
+              - link "Privacy Policy" [ref=e161] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e162]:
+              - link "Terms of Service" [ref=e163] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e164]:
+              - link "DPA" [ref=e165] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e166]:
+              - link "EU AI Act Readiness" [ref=e167] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e168]:
+              - link "Security" [ref=e169] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - paragraph [ref=e172]: © 2026 Negentrophi, Inc. All rights reserved.
+          - generic "Marketing visualization — not real telemetry" [ref=e173]:
+            - generic [ref=e175]: 847,293,441
+            - generic [ref=e176]: tokens processed
+        - link "security@nxpi.ai" [ref=e177] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e183] [cursor=pointer]:
+    - img [ref=e184]
+  - alert [ref=e187]
+  - generic [ref=e188]:
+    - paragraph [ref=e189]:
+      - text: We use privacy-preserving analytics (no cookies, no tracking pixels). Your DNT preference is respected.
+      - link "Privacy Policy" [ref=e190] [cursor=pointer]:
+        - /url: /legal/privacy
+    - button "Dismiss" [ref=e191]:
+      - img [ref=e192]

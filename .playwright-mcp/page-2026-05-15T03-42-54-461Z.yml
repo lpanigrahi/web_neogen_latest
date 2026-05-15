@@ -1,0 +1,246 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - link "All pillars" [ref=e33] [cursor=pointer]:
+          - /url: /platform
+          - img [ref=e34]
+          - text: All pillars
+        - generic [ref=e36]: /
+        - generic [ref=e37]: Visual Workflow Automation
+      - generic [ref=e41]:
+        - paragraph [ref=e43]: PILLAR 4
+        - heading "Every business process, automated. Every step, auditable." [level=1] [ref=e45]
+        - paragraph [ref=e47]: "A visual DAG builder with 9 node types: Input, Output, LLM, Tool, Condition, HTTP, Template, Agent, Note. Trigger by cron, webhook, or API. Every node execution is logged to the append-only audit trail."
+        - link "Book an executive briefing" [ref=e50] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: Interactive demo
+          - heading "Visual Workflow Automation" [level=2] [ref=e55]
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - button "Play" [ref=e58]:
+              - img [ref=e59]
+              - text: Play
+            - button "Reset" [ref=e61]:
+              - img [ref=e62]
+              - text: Reset
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - generic [ref=e70]: ⏰
+                - generic [ref=e71]: Cron
+              - img [ref=e73]
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - generic [ref=e78]: 🗄️
+                - generic [ref=e79]: SAP Tool
+              - img [ref=e81]
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - generic [ref=e86]: ✦
+                - generic [ref=e87]: LLM
+              - img [ref=e89]
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - generic [ref=e94]: ◇
+                - generic [ref=e95]: Condition
+              - img [ref=e97]
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - generic [ref=e102]: ☁
+                - generic [ref=e103]: Salesforce
+              - img [ref=e105]
+            - generic [ref=e108]:
+              - generic [ref=e110]: 📤
+              - generic [ref=e111]: Output
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Execution Log
+            - paragraph [ref=e114]: Press Play to start the workflow…
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - paragraph [ref=e118]: What it does
+          - heading "Three outcomes you can quote." [level=2] [ref=e119]
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - img [ref=e122]
+            - paragraph [ref=e125]: 9 node types for any business process
+          - generic [ref=e126]:
+            - img [ref=e127]
+            - paragraph [ref=e130]: Cron, webhook, and API triggers
+          - generic [ref=e131]:
+            - img [ref=e132]
+            - paragraph [ref=e135]: Full execution audit trail
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - paragraph [ref=e138]: For who
+          - heading "Who cares most — and why." [level=2] [ref=e139]
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e142]: COO
+            - paragraph [ref=e143]: “Business analysts can automate processes without engineering. The visual builder is genuinely accessible.”
+            - paragraph [ref=e144]: Chief Operating Officer
+          - generic [ref=e145]:
+            - generic [ref=e146]: CFO
+            - paragraph [ref=e147]: “Every automated step is in the audit log. Compliance sign-off went from weeks to days.”
+            - paragraph [ref=e148]: Chief Financial Officer
+          - generic [ref=e149]:
+            - generic [ref=e150]: CTO
+            - paragraph [ref=e151]: “The DAG model composes cleanly with our agent network. Workflows and agents are peers, not silos.”
+            - paragraph [ref=e152]: Chief Technology Officer
+      - generic [ref=e156]:
+        - heading "Ready to see Visual Workflow Automation live?" [level=2] [ref=e158]
+        - paragraph [ref=e160]: Book an executive briefing and walk through this pillar with our team.
+        - generic [ref=e162]:
+          - link "Book an executive briefing" [ref=e163] [cursor=pointer]:
+            - /url: /contact
+          - link "All six pillars" [ref=e164] [cursor=pointer]:
+            - /url: /platform
+            - text: All six pillars
+            - img [ref=e165]
+      - generic [ref=e169]:
+        - link "Previous Hybrid RAG Knowledge Runtime" [ref=e170] [cursor=pointer]:
+          - /url: /platform/rag
+          - img [ref=e171]
+          - generic [ref=e173]:
+            - paragraph [ref=e174]: Previous
+            - paragraph [ref=e175]: Hybrid RAG Knowledge Runtime
+        - link "Next Unified Data Layer" [ref=e176] [cursor=pointer]:
+          - /url: /platform/data-layer
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: Next
+            - paragraph [ref=e179]: Unified Data Layer
+          - img [ref=e180]
+  - contentinfo [ref=e182]:
+    - generic [ref=e183]:
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - img "NXπ logo mark" [ref=e187]
+            - generic [ref=e192]: NXπ
+          - paragraph [ref=e193]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e198] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e199]:
+          - heading "Platform" [level=3] [ref=e200]
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - link "MCP Fabric" [ref=e203] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e204]:
+              - link "Orchestration" [ref=e205] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e206]:
+              - link "Hybrid RAG" [ref=e207] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e208]:
+              - link "Workflows" [ref=e209] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e210]:
+              - link "Data Layer" [ref=e211] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e212]:
+              - link "Governance" [ref=e213] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e214]:
+          - heading "Solutions" [level=3] [ref=e215]
+          - list [ref=e216]:
+            - listitem [ref=e217]:
+              - link "NXπ for SAP" [ref=e218] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e219]:
+              - link "NXπ for Salesforce" [ref=e220] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e221]:
+              - link "SAP + Salesforce Fusion" [ref=e222] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e223]:
+              - link "For the CFO" [ref=e224] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e225]:
+              - link "For the CISO" [ref=e226] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e227]:
+          - heading "Company" [level=3] [ref=e228]
+          - list [ref=e229]:
+            - listitem [ref=e230]:
+              - link "About" [ref=e231] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e232]:
+              - link "Customers" [ref=e233] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e234]:
+              - link "Blog" [ref=e235] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e236]:
+              - link "Changelog" [ref=e237] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e238]:
+              - link "Contact" [ref=e239] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e240]:
+          - heading "Legal" [level=3] [ref=e241]
+          - list [ref=e242]:
+            - listitem [ref=e243]:
+              - link "Privacy Policy" [ref=e244] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e245]:
+              - link "Terms of Service" [ref=e246] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e247]:
+              - link "DPA" [ref=e248] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e249]:
+              - link "EU AI Act Readiness" [ref=e250] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e251]:
+              - link "Security" [ref=e252] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - paragraph [ref=e255]: © 2026 Negentrophi, Inc. All rights reserved.
+          - generic "Marketing visualization — not real telemetry" [ref=e256]:
+            - generic [ref=e258]: 847,293,441
+            - generic [ref=e259]: tokens processed
+        - link "security@nxpi.ai" [ref=e260] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e266] [cursor=pointer]:
+    - img [ref=e267]
+  - alert [ref=e270]
+  - generic [ref=e271]:
+    - paragraph [ref=e272]:
+      - text: We use privacy-preserving analytics (no cookies, no tracking pixels). Your DNT preference is respected.
+      - link "Privacy Policy" [ref=e273] [cursor=pointer]:
+        - /url: /legal/privacy
+    - button "Dismiss" [ref=e274]:
+      - img [ref=e275]

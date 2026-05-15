@@ -1,0 +1,200 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - generic [ref=e34]: Changelog
+        - heading "Release history" [level=1] [ref=e36]
+        - paragraph [ref=e38]: What ships in NXπ, when it ships, and why it matters for enterprise AI deployments.
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - generic [ref=e47]:
+            - time [ref=e48]: September 2026
+            - generic [ref=e49]: v1.2
+            - generic [ref=e50]: Latest
+          - heading "Q3 2026 — EU AI Act Compliance Dashboard" [level=2] [ref=e51]
+          - list [ref=e52]:
+            - listitem [ref=e53]:
+              - generic [ref=e55]:
+                - paragraph [ref=e56]: EU AI Act readiness dashboard
+                - paragraph [ref=e57]: Automated compliance assessment against the 6 high-risk requirements. Exportable compliance report for regulators and board review.
+            - listitem [ref=e58]:
+              - generic [ref=e60]:
+                - paragraph [ref=e61]: Enhanced audit log
+                - paragraph [ref=e62]: Extended retention options, cross-system correlation, tamper-evident timestamps, and compliance export in EU AI Act technical documentation format.
+            - listitem [ref=e63]:
+              - generic [ref=e65]:
+                - paragraph [ref=e66]: SOC 2 alignment
+                - paragraph [ref=e67]: Audit log structure aligned with SOC 2 Type II requirements. Automated evidence collection for access controls, change management, and availability monitoring.
+            - listitem [ref=e68]:
+              - generic [ref=e70]:
+                - paragraph [ref=e71]: Chargeback dashboard
+                - paragraph [ref=e72]: Per-team, per-workflow token cost attribution. Budget alerts and spend forecasting. CFO-ready reporting.
+        - generic [ref=e74]:
+          - generic [ref=e76]:
+            - time [ref=e77]: June 2026
+            - generic [ref=e78]: v1.1
+          - heading "Q2 2026 — SAP + Salesforce Connectors" [level=2] [ref=e79]
+          - list [ref=e80]:
+            - listitem [ref=e81]:
+              - generic [ref=e83]:
+                - paragraph [ref=e84]: SAP HANA Cloud MCP connector
+                - paragraph [ref=e85]: Native integration with SAP HANA Cloud via MCP. Real-time data access, no replication. Joule-compatible.
+            - listitem [ref=e86]:
+              - generic [ref=e88]:
+                - paragraph [ref=e89]: Salesforce MCP connector
+                - paragraph [ref=e90]: Agentforce-native integration. Access Opportunities, Accounts, Cases, and custom objects through MCP. Bi-directional tool support.
+            - listitem [ref=e91]:
+              - generic [ref=e93]:
+                - paragraph [ref=e94]: Visual Workflow Builder
+                - paragraph [ref=e95]: "DAG-based workflow automation with 9 node types: Input, Output, LLM, Tool, Condition, HTTP, Template, Agent, Note. Cron, webhook, and API triggers."
+            - listitem [ref=e96]:
+              - generic [ref=e98]:
+                - paragraph [ref=e99]: Finance-specific reasoning flows
+                - paragraph [ref=e100]: "Pre-built workflows for: margin analysis, variance analysis, financial reconciliation, working capital insights, and scenario modeling against SAP data."
+        - generic [ref=e102]:
+          - generic [ref=e104]:
+            - time [ref=e105]: March 2026
+            - generic [ref=e106]: v1.0
+            - generic [ref=e107]: GA
+          - heading "Q1 2026 — Foundation Release" [level=2] [ref=e108]
+          - list [ref=e109]:
+            - listitem [ref=e110]:
+              - generic [ref=e112]:
+                - paragraph [ref=e113]: MCP Integration Fabric
+                - paragraph [ref=e114]: NXπ is a first-class MCP host. Connect SAP HANA Cloud, S/4HANA, Salesforce, and any MCP-compatible system through the open protocol. Native support for SSE and WebSocket transports.
+            - listitem [ref=e115]:
+              - generic [ref=e117]:
+                - paragraph [ref=e118]: Hybrid RAG
+                - paragraph [ref=e119]: Vector search + BM25 with Reciprocal Rank Fusion. Default retrieval strategy achieves 91%+ recall@10. Source attribution on every answer.
+            - listitem [ref=e120]:
+              - generic [ref=e122]:
+                - paragraph [ref=e123]: Agent Builder
+                - paragraph [ref=e124]: Create single agents and multi-agent pipelines. Token accounting per agent per run. Full call tree in the audit log.
+            - listitem [ref=e125]:
+              - generic [ref=e127]:
+                - paragraph [ref=e128]: Zero-Trust Governance
+                - paragraph [ref=e129]: Per-user RBAC, label-based policies, MCP server scoping, model allowlists, PII detection and masking, append-only audit log.
+            - listitem [ref=e130]:
+              - generic [ref=e132]:
+                - paragraph [ref=e133]: Self-hosted deployment
+                - paragraph [ref=e134]: Run NXπ entirely within your infrastructure. PostgreSQL + pgvector + Ollama. Nothing leaves your perimeter.
+  - contentinfo [ref=e135]:
+    - generic [ref=e136]:
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - generic [ref=e139]:
+            - img "NXπ logo mark" [ref=e140]
+            - generic [ref=e145]: NXπ
+          - paragraph [ref=e146]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e151] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e152]:
+          - heading "Platform" [level=3] [ref=e153]
+          - list [ref=e154]:
+            - listitem [ref=e155]:
+              - link "MCP Fabric" [ref=e156] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e157]:
+              - link "Orchestration" [ref=e158] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e159]:
+              - link "Hybrid RAG" [ref=e160] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e161]:
+              - link "Workflows" [ref=e162] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e163]:
+              - link "Data Layer" [ref=e164] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e165]:
+              - link "Governance" [ref=e166] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e167]:
+          - heading "Solutions" [level=3] [ref=e168]
+          - list [ref=e169]:
+            - listitem [ref=e170]:
+              - link "NXπ for SAP" [ref=e171] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e172]:
+              - link "NXπ for Salesforce" [ref=e173] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e174]:
+              - link "SAP + Salesforce Fusion" [ref=e175] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e176]:
+              - link "For the CFO" [ref=e177] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e178]:
+              - link "For the CISO" [ref=e179] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e180]:
+          - heading "Company" [level=3] [ref=e181]
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - link "About" [ref=e184] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e185]:
+              - link "Customers" [ref=e186] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e187]:
+              - link "Blog" [ref=e188] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e189]:
+              - link "Changelog" [ref=e190] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e191]:
+              - link "Contact" [ref=e192] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e193]:
+          - heading "Legal" [level=3] [ref=e194]
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - link "Privacy Policy" [ref=e197] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e198]:
+              - link "Terms of Service" [ref=e199] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e200]:
+              - link "DPA" [ref=e201] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e202]:
+              - link "EU AI Act Readiness" [ref=e203] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e204]:
+              - link "Security" [ref=e205] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e206]:
+        - paragraph [ref=e208]: © 2026 Negentrophi, Inc. All rights reserved.
+        - link "security@nxpi.ai" [ref=e209] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e215] [cursor=pointer]:
+    - img [ref=e216]

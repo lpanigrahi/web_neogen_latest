@@ -1,0 +1,161 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - generic [ref=e34]: Blog
+        - heading "Research and perspectives" [level=1] [ref=e37]
+        - paragraph [ref=e39]: On enterprise AI, governed data infrastructure, and the Model Context Protocol. Written by the NXπ team.
+      - generic [ref=e41]:
+        - article [ref=e42]:
+          - link "Architecture 7 min read Why every enterprise AI platform assumes a graph — and what we built instead Copilot assumes the productivity graph. Agentforce assumes the customer graph. Palantir assumes an ontology. We built something different. May 1, 2026 Read →" [ref=e43] [cursor=pointer]:
+            - /url: /blog/why-enterprise-ai-assumes-a-graph
+            - generic [ref=e44]:
+              - generic [ref=e45]: Architecture
+              - generic [ref=e46]: 7 min read
+            - heading "Why every enterprise AI platform assumes a graph — and what we built instead" [level=2] [ref=e47]
+            - paragraph [ref=e48]: Copilot assumes the productivity graph. Agentforce assumes the customer graph. Palantir assumes an ontology. We built something different.
+            - generic [ref=e49]:
+              - time [ref=e50]: May 1, 2026
+              - generic [ref=e51]: Read →
+        - article [ref=e52]:
+          - link "Retrieval 6 min read Hybrid RAG is not a search feature. It is a knowledge runtime. Vector search retrieves by meaning. BM25 retrieves by keyword. RRF combines them. The result is 91%+ recall. April 15, 2026 Read →" [ref=e53] [cursor=pointer]:
+            - /url: /blog/hybrid-rag-knowledge-runtime
+            - generic [ref=e54]:
+              - generic [ref=e55]: Retrieval
+              - generic [ref=e56]: 6 min read
+            - heading "Hybrid RAG is not a search feature. It is a knowledge runtime." [level=2] [ref=e57]
+            - paragraph [ref=e58]: Vector search retrieves by meaning. BM25 retrieves by keyword. RRF combines them. The result is 91%+ recall.
+            - generic [ref=e59]:
+              - time [ref=e60]: April 15, 2026
+              - generic [ref=e61]: Read →
+        - article [ref=e62]:
+          - 'link "Compliance 8 min read August 2, 2026: what the EU AI Act high-risk deadline actually requires August 2, 2026 is the compliance deadline for high-risk AI systems. Here is what it actually requires. April 1, 2026 Read →" [ref=e63] [cursor=pointer]':
+            - /url: /blog/eu-ai-act-august-2026
+            - generic [ref=e64]:
+              - generic [ref=e65]: Compliance
+              - generic [ref=e66]: 8 min read
+            - 'heading "August 2, 2026: what the EU AI Act high-risk deadline actually requires" [level=2] [ref=e67]'
+            - paragraph [ref=e68]: August 2, 2026 is the compliance deadline for high-risk AI systems. Here is what it actually requires.
+            - generic [ref=e69]:
+              - time [ref=e70]: April 1, 2026
+              - generic [ref=e71]: Read →
+  - contentinfo [ref=e72]:
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - img "NXπ logo mark" [ref=e77]
+            - generic [ref=e82]: NXπ
+          - paragraph [ref=e83]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e88] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e89]:
+          - heading "Platform" [level=3] [ref=e90]
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - link "MCP Fabric" [ref=e93] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e94]:
+              - link "Orchestration" [ref=e95] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e96]:
+              - link "Hybrid RAG" [ref=e97] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e98]:
+              - link "Workflows" [ref=e99] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e100]:
+              - link "Data Layer" [ref=e101] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e102]:
+              - link "Governance" [ref=e103] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e104]:
+          - heading "Solutions" [level=3] [ref=e105]
+          - list [ref=e106]:
+            - listitem [ref=e107]:
+              - link "NXπ for SAP" [ref=e108] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e109]:
+              - link "NXπ for Salesforce" [ref=e110] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e111]:
+              - link "SAP + Salesforce Fusion" [ref=e112] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e113]:
+              - link "For the CFO" [ref=e114] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e115]:
+              - link "For the CISO" [ref=e116] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e117]:
+          - heading "Company" [level=3] [ref=e118]
+          - list [ref=e119]:
+            - listitem [ref=e120]:
+              - link "About" [ref=e121] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e122]:
+              - link "Customers" [ref=e123] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e124]:
+              - link "Blog" [ref=e125] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e126]:
+              - link "Changelog" [ref=e127] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e128]:
+              - link "Contact" [ref=e129] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e130]:
+          - heading "Legal" [level=3] [ref=e131]
+          - list [ref=e132]:
+            - listitem [ref=e133]:
+              - link "Privacy Policy" [ref=e134] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e135]:
+              - link "Terms of Service" [ref=e136] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e137]:
+              - link "DPA" [ref=e138] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e139]:
+              - link "EU AI Act Readiness" [ref=e140] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e141]:
+              - link "Security" [ref=e142] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e143]:
+        - paragraph [ref=e145]: © 2026 Negentrophi, Inc. All rights reserved.
+        - link "security@nxpi.ai" [ref=e146] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e152] [cursor=pointer]:
+    - img [ref=e153]

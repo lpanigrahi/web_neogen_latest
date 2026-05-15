@@ -1,0 +1,280 @@
+- generic [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - link "All pillars" [ref=e33] [cursor=pointer]:
+          - /url: /platform
+          - img [ref=e34]
+          - text: All pillars
+        - generic [ref=e36]: /
+        - generic [ref=e37]: Hybrid RAG Knowledge Runtime
+      - generic [ref=e41]:
+        - paragraph [ref=e43]: PILLAR 3
+        - heading "91%+ retrieval recall. Not a search feature — a knowledge runtime." [level=1] [ref=e45]
+        - paragraph [ref=e47]: Hybrid RAG with Reciprocal Rank Fusion (RRF) combines vector semantic search with BM25 keyword search. Recall@10 jumps from 65–78% to 91%+ versus vector-only. Sources are attributed. Answers are grounded.
+        - link "Book an executive briefing" [ref=e50] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: Interactive demo
+          - heading "Hybrid RAG Knowledge Runtime" [level=2] [ref=e55]
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - img [ref=e59]
+              - textbox "Enter search query…" [ref=e62]: Q3 sales pipeline reconciliation against SAP billing
+            - button "Search" [active] [ref=e63]:
+              - img [ref=e64]
+              - text: Search
+            - button "Reset" [ref=e231]
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - generic [ref=e236]: Vector (Semantic)
+              - generic [ref=e237]:
+                - generic [ref=e238]: 1. Q3 Revenue Recognition Policy v4.2
+                - generic [ref=e239]: "0.91"
+              - generic [ref=e240]:
+                - generic [ref=e241]: 2. SAP Billing Reconciliation Guide
+                - generic [ref=e242]: "0.87"
+              - generic [ref=e243]:
+                - generic [ref=e244]: 3. Salesforce Pipeline Close Methodology
+                - generic [ref=e245]: "0.84"
+              - generic [ref=e246]:
+                - generic [ref=e247]: 4. Financial Close Checklist Q3 2026
+                - generic [ref=e248]: "0.79"
+              - generic [ref=e249]:
+                - generic [ref=e250]: 5. Revenue Forecast vs Actuals Template
+                - generic [ref=e251]: "0.76"
+            - generic [ref=e252]:
+              - generic [ref=e255]: BM25 (Keyword)
+              - generic [ref=e256]:
+                - generic [ref=e257]: 1. Q3 SAP billing export
+                - generic [ref=e258]: "18.4"
+              - generic [ref=e259]:
+                - generic [ref=e260]: 2. Pipeline reconciliation procedure
+                - generic [ref=e261]: "15.2"
+              - generic [ref=e262]:
+                - generic [ref=e263]: 3. Q3 sales close criteria
+                - generic [ref=e264]: "12.8"
+              - generic [ref=e265]:
+                - generic [ref=e266]: 4. SAP VBAK billing document Q3
+                - generic [ref=e267]: "11.1"
+              - generic [ref=e268]:
+                - generic [ref=e269]: 5. Salesforce opportunity stage mapping
+                - generic [ref=e270]: "9.7"
+            - generic [ref=e271]:
+              - generic [ref=e274]: RRF Fusion
+              - generic [ref=e275]:
+                - paragraph [ref=e276]:
+                  - text: RRF(d) = Σ 1 / (k + rank
+                  - subscript [ref=e277]: i
+                  - text: (d))
+                - paragraph [ref=e278]: k = 60
+              - generic [ref=e279]:
+                - generic [ref=e280]: 1. Q3 Revenue Recognition Policy v4.2
+                - generic [ref=e281]: ★
+              - generic [ref=e282]:
+                - generic [ref=e283]: 2. SAP Billing Reconciliation Guide
+                - generic [ref=e284]: ★
+              - generic [ref=e286]: 3. Pipeline reconciliation procedure
+              - generic [ref=e288]: 4. Q3 sales close criteria
+              - generic [ref=e290]: 5. Q3 SAP billing export
+              - generic [ref=e291]:
+                - generic [ref=e292]: Recall@10
+                - generic [ref=e293]: 91.3%
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - img [ref=e296]
+              - generic [ref=e298]: Synthesized Answer
+            - paragraph [ref=e299]: "Q3 revenue reconciliation gap: $5.6M across 3 enterprise deals. Primary cause: SAP billing recognition delayed pending customer sign-off on change orders. Salesforce opportunity stage: Commit. Recommended action: escalate to CFO for Q3 accrual decision."
+            - generic [ref=e300]:
+              - generic [ref=e301]: "Sources:"
+              - generic [ref=e302]: Q3 Revenue Recognition Policy v4.2
+              - generic [ref=e303]: SAP Billing Reconciliation Guide
+              - generic [ref=e304]: Salesforce Pipeline Close Methodology
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: What it does
+          - heading "Three outcomes you can quote." [level=2] [ref=e72]
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - img [ref=e75]
+            - paragraph [ref=e78]: 91%+ retrieval recall with hybrid RRF
+          - generic [ref=e79]:
+            - img [ref=e80]
+            - paragraph [ref=e83]: Source attribution on every answer
+          - generic [ref=e84]:
+            - img [ref=e85]
+            - paragraph [ref=e88]: "Multi-scope: document, team, enterprise"
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - paragraph [ref=e91]: For who
+          - heading "Who cares most — and why." [level=2] [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]: CTO
+            - paragraph [ref=e96]: “The jump from 70% to 91%+ recall is not incremental — it's the difference between a demo and production.”
+            - paragraph [ref=e97]: Chief Technology Officer
+          - generic [ref=e98]:
+            - generic [ref=e99]: CISO
+            - paragraph [ref=e100]: “Every answer includes its source citation. Auditability is built in, not bolted on.”
+            - paragraph [ref=e101]: Chief Information Security Officer
+          - generic [ref=e102]:
+            - generic [ref=e103]: CDO
+            - paragraph [ref=e104]: “Multi-scope retrieval means one agent can search my document, my team's knowledge, and the enterprise corpus in one shot.”
+            - paragraph [ref=e105]: Chief Data Officer
+      - generic [ref=e109]:
+        - heading "Ready to see Hybrid RAG Knowledge Runtime live?" [level=2] [ref=e111]
+        - paragraph [ref=e113]: Book an executive briefing and walk through this pillar with our team.
+        - generic [ref=e115]:
+          - link "Book an executive briefing" [ref=e116] [cursor=pointer]:
+            - /url: /contact
+          - link "All six pillars" [ref=e117] [cursor=pointer]:
+            - /url: /platform
+            - text: All six pillars
+            - img [ref=e118]
+      - generic [ref=e122]:
+        - link "Previous Multi-Agent Orchestration" [ref=e123] [cursor=pointer]:
+          - /url: /platform/orchestration
+          - img [ref=e124]
+          - generic [ref=e126]:
+            - paragraph [ref=e127]: Previous
+            - paragraph [ref=e128]: Multi-Agent Orchestration
+        - link "Next Visual Workflow Automation" [ref=e129] [cursor=pointer]:
+          - /url: /platform/workflows
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: Next
+            - paragraph [ref=e132]: Visual Workflow Automation
+          - img [ref=e133]
+  - contentinfo [ref=e135]:
+    - generic [ref=e136]:
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - generic [ref=e139]:
+            - img "NXπ logo mark" [ref=e140]
+            - generic [ref=e145]: NXπ
+          - paragraph [ref=e146]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e151] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e152]:
+          - heading "Platform" [level=3] [ref=e153]
+          - list [ref=e154]:
+            - listitem [ref=e155]:
+              - link "MCP Fabric" [ref=e156] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e157]:
+              - link "Orchestration" [ref=e158] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e159]:
+              - link "Hybrid RAG" [ref=e160] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e161]:
+              - link "Workflows" [ref=e162] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e163]:
+              - link "Data Layer" [ref=e164] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e165]:
+              - link "Governance" [ref=e166] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e167]:
+          - heading "Solutions" [level=3] [ref=e168]
+          - list [ref=e169]:
+            - listitem [ref=e170]:
+              - link "NXπ for SAP" [ref=e171] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e172]:
+              - link "NXπ for Salesforce" [ref=e173] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e174]:
+              - link "SAP + Salesforce Fusion" [ref=e175] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e176]:
+              - link "For the CFO" [ref=e177] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e178]:
+              - link "For the CISO" [ref=e179] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e180]:
+          - heading "Company" [level=3] [ref=e181]
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - link "About" [ref=e184] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e185]:
+              - link "Customers" [ref=e186] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e187]:
+              - link "Blog" [ref=e188] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e189]:
+              - link "Changelog" [ref=e190] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e191]:
+              - link "Contact" [ref=e192] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e193]:
+          - heading "Legal" [level=3] [ref=e194]
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - link "Privacy Policy" [ref=e197] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e198]:
+              - link "Terms of Service" [ref=e199] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e200]:
+              - link "DPA" [ref=e201] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e202]:
+              - link "EU AI Act Readiness" [ref=e203] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e204]:
+              - link "Security" [ref=e205] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - paragraph [ref=e208]: © 2026 Negentrophi, Inc. All rights reserved.
+          - generic "Marketing visualization — not real telemetry" [ref=e209]:
+            - generic [ref=e211]: 847,324,073
+            - generic [ref=e212]: tokens processed
+        - link "security@nxpi.ai" [ref=e213] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e219] [cursor=pointer]:
+    - img [ref=e220]
+  - alert [ref=e223]
+  - generic [ref=e224]:
+    - paragraph [ref=e225]:
+      - text: We use privacy-preserving analytics (no cookies, no tracking pixels). Your DNT preference is respected.
+      - link "Privacy Policy" [ref=e226] [cursor=pointer]:
+        - /url: /legal/privacy
+    - button "Dismiss" [ref=e227]:
+      - img [ref=e228]

@@ -1,0 +1,200 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - link "All pillars" [ref=e33] [cursor=pointer]:
+          - /url: /platform
+          - img [ref=e34]
+          - text: All pillars
+        - generic [ref=e36]: /
+        - generic [ref=e37]: MCP Integration Fabric
+      - generic [ref=e41]:
+        - paragraph [ref=e43]: PILLAR 1
+        - heading "Connect every enterprise system through one open protocol." [level=1] [ref=e45]
+        - paragraph [ref=e47]: NXπ is a first-class MCP host. SAP HANA Cloud, S/4HANA, Salesforce, MuleSoft, and 60+ other systems connect through the Model Context Protocol — the same open standard that Salesforce, SAP, and Anthropic have all adopted in 2026.
+        - link "Book an executive briefing" [ref=e50] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: Interactive demo
+          - heading "MCP Integration Fabric" [level=2] [ref=e55]
+        - paragraph [ref=e57]: MCP Fabric — Interactive Demo
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: What it does
+          - heading "Three outcomes you can quote." [level=2] [ref=e62]
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - img [ref=e65]
+            - paragraph [ref=e68]: Connect SAP + Salesforce as peers under one protocol
+          - generic [ref=e69]:
+            - img [ref=e70]
+            - paragraph [ref=e73]: 78% of enterprise AI teams have ≥1 MCP-backed agent in production
+          - generic [ref=e74]:
+            - img [ref=e75]
+            - paragraph [ref=e78]: 17,468+ MCP servers indexed in Q1 2026
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - paragraph [ref=e81]: For who
+          - heading "Who cares most — and why." [level=2] [ref=e82]
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: CTO
+            - paragraph [ref=e86]: “MCP removes bespoke integration debt. One protocol replaces dozens of point-to-point connectors.”
+            - paragraph [ref=e87]: Chief Technology Officer
+          - generic [ref=e88]:
+            - generic [ref=e89]: CIO
+            - paragraph [ref=e90]: “We finally have a single governance boundary for every system our agents touch.”
+            - paragraph [ref=e91]: Chief Information Officer
+          - generic [ref=e92]:
+            - generic [ref=e93]: VP Eng
+            - paragraph [ref=e94]: “Our team went from weeks of integration work to hours — MCP Fabric handled the rest.”
+            - paragraph [ref=e95]: VP Engineering
+      - generic [ref=e99]:
+        - heading "Ready to see MCP Integration Fabric live?" [level=2] [ref=e101]
+        - paragraph [ref=e103]: Book an executive briefing and walk through this pillar with our team.
+        - generic [ref=e105]:
+          - link "Book an executive briefing" [ref=e106] [cursor=pointer]:
+            - /url: /contact
+          - link "All six pillars" [ref=e107] [cursor=pointer]:
+            - /url: /platform
+            - text: All six pillars
+            - img [ref=e108]
+      - link "Next Multi-Agent Orchestration" [ref=e114] [cursor=pointer]:
+        - /url: /platform/orchestration
+        - generic [ref=e115]:
+          - paragraph [ref=e116]: Next
+          - paragraph [ref=e117]: Multi-Agent Orchestration
+        - img [ref=e118]
+  - contentinfo [ref=e120]:
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - img "NXπ logo mark" [ref=e125]
+            - generic [ref=e130]: NXπ
+          - paragraph [ref=e131]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e136] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e137]:
+          - heading "Platform" [level=3] [ref=e138]
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - link "MCP Fabric" [ref=e141] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e142]:
+              - link "Orchestration" [ref=e143] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e144]:
+              - link "Hybrid RAG" [ref=e145] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e146]:
+              - link "Workflows" [ref=e147] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e148]:
+              - link "Data Layer" [ref=e149] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e150]:
+              - link "Governance" [ref=e151] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e152]:
+          - heading "Solutions" [level=3] [ref=e153]
+          - list [ref=e154]:
+            - listitem [ref=e155]:
+              - link "NXπ for SAP" [ref=e156] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e157]:
+              - link "NXπ for Salesforce" [ref=e158] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e159]:
+              - link "SAP + Salesforce Fusion" [ref=e160] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e161]:
+              - link "For the CFO" [ref=e162] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e163]:
+              - link "For the CISO" [ref=e164] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e165]:
+          - heading "Company" [level=3] [ref=e166]
+          - list [ref=e167]:
+            - listitem [ref=e168]:
+              - link "About" [ref=e169] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e170]:
+              - link "Customers" [ref=e171] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e172]:
+              - link "Blog" [ref=e173] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e174]:
+              - link "Changelog" [ref=e175] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e176]:
+              - link "Contact" [ref=e177] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e178]:
+          - heading "Legal" [level=3] [ref=e179]
+          - list [ref=e180]:
+            - listitem [ref=e181]:
+              - link "Privacy Policy" [ref=e182] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e183]:
+              - link "Terms of Service" [ref=e184] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e185]:
+              - link "DPA" [ref=e186] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e187]:
+              - link "EU AI Act Readiness" [ref=e188] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e189]:
+              - link "Security" [ref=e190] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - paragraph [ref=e193]: © 2026 Negentrophi, Inc. All rights reserved.
+          - generic "Marketing visualization — not real telemetry" [ref=e194]:
+            - generic [ref=e196]: 847,293,441
+            - generic [ref=e197]: tokens processed
+        - link "security@nxpi.ai" [ref=e198] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e204] [cursor=pointer]:
+    - img [ref=e205]
+  - alert [ref=e208]
+  - generic [ref=e209]:
+    - paragraph [ref=e210]:
+      - text: We use privacy-preserving analytics (no cookies, no tracking pixels). Your DNT preference is respected.
+      - link "Privacy Policy" [ref=e211] [cursor=pointer]:
+        - /url: /legal/privacy
+    - button "Dismiss" [ref=e212]:
+      - img [ref=e213]

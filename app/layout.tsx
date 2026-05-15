@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Theme hydration script must be in <body> to run before React, preventing flash */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{const t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')}catch{}`,
+            __html: `try{const t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')}catch{}`,
           }}
         />
         <CustomCursor />

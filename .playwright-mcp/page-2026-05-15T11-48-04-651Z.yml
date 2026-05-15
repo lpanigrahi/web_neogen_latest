@@ -1,0 +1,39 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "NXπ home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]:
+          - img "NXπ logo mark" [ref=e7]
+          - generic [ref=e12]: NXπ
+      - navigation "Main navigation" [ref=e13]:
+        - link "Platform" [ref=e14] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e15] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e16] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e17] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e18] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e19]:
+        - button "Switch to light mode" [ref=e20]:
+          - img [ref=e21]
+        - button "Open command palette" [ref=e27]:
+          - img [ref=e28]
+          - generic [ref=e31]: Search
+          - generic [ref=e32]: ⌘K
+        - link "Sign in" [ref=e33] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e34] [cursor=pointer]:
+          - /url: /contact
+  - generic [ref=e38]:
+    - paragraph [ref=e39]: "404"
+    - heading "Page not found." [level=1] [ref=e40]
+    - paragraph [ref=e41]: The page you are looking for does not exist or has been moved.
+    - link "Return to home" [ref=e42] [cursor=pointer]:
+      - /url: /
+  - button "Open Next.js Dev Tools" [ref=e48] [cursor=pointer]:
+    - img [ref=e49]
+  - alert [ref=e52]

@@ -247,6 +247,8 @@ export function DataLayerDemo() {
               <button
                 key={cat.id}
                 onClick={() => setActiveId(cat.id)}
+                aria-label={`${cat.label} — ${cat.system}`}
+                aria-pressed={isActive}
                 className={cn(
                   "flex flex-col items-start gap-0.5 px-3 py-2 rounded-lg border text-xs transition-all duration-200 cursor-pointer whitespace-nowrap",
                   isActive

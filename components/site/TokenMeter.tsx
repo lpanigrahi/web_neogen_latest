@@ -25,7 +25,7 @@ export function TokenMeter() {
       title="Marketing visualization — not real telemetry"
     >
       <span className="h-1.5 w-1.5 rounded-full bg-aurora-1 animate-pulse" aria-hidden="true" />
-      <span className="font-mono">{count.toLocaleString("en-US")}</span>
+      <span className="font-mono" suppressHydrationWarning>{count.toLocaleString("en-US")}</span>
       <span>tokens processed</span>
     </div>
   );

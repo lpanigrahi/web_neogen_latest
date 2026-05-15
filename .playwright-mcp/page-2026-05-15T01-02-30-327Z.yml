@@ -1,0 +1,175 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "NXπ home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]:
+          - img "NXπ logo mark" [ref=e8]
+          - generic [ref=e13]: NXπ
+      - navigation "Main navigation" [ref=e14]:
+        - link "Platform" [ref=e15] [cursor=pointer]:
+          - /url: /platform
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+        - link "Architecture" [ref=e17] [cursor=pointer]:
+          - /url: /architecture
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+        - link "Blog" [ref=e19] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e20]:
+        - button "Open command palette" [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e25]: Search
+          - generic [ref=e26]: ⌘K
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+        - link "Book a briefing" [ref=e28] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - navigation [ref=e32]:
+        - link "Solutions" [ref=e33] [cursor=pointer]:
+          - /url: /solutions
+        - generic [ref=e34]: /
+        - generic [ref=e35]: CFO
+      - generic [ref=e37]:
+        - generic [ref=e38]: For the CFO
+        - heading "Transparent Token Economics." [level=1] [ref=e39]
+        - paragraph [ref=e40]: Every prompt costed. Every agent budgeted. Every ROI dollar measurable.
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: 1.7x
+          - paragraph [ref=e45]: average ROI in 12–18 months
+        - generic [ref=e46]:
+          - generic [ref=e47]: <15%
+          - paragraph [ref=e48]: token overhead vs direct API
+        - generic [ref=e49]:
+          - generic [ref=e50]: Chargeback
+          - paragraph [ref=e51]: dashboard per team and workflow
+      - generic [ref=e52]:
+        - heading "Key use cases" [level=2] [ref=e53]
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: "01"
+            - heading "Token cost transparency" [level=3] [ref=e57]
+            - paragraph [ref=e58]: Every model call costed to a team, workflow, and budget line — visible in real time.
+          - generic [ref=e59]:
+            - generic [ref=e60]: "02"
+            - heading "ROI attribution" [level=3] [ref=e61]
+            - paragraph [ref=e62]: Measure productivity impact per agent, per workflow, per department — with audit-grade evidence.
+          - generic [ref=e63]:
+            - generic [ref=e64]: "03"
+            - heading "Chargeback automation" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Automatic cost allocation reports delivered to finance monthly, without manual data pulls.
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - paragraph [ref=e70]: Download the AI ROI framework
+          - paragraph [ref=e71]: Tailored for the CFO — 30 minutes, no slides.
+        - link "Download the AI ROI framework →" [ref=e72] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e73]:
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - img "NXπ logo mark" [ref=e78]
+            - generic [ref=e83]: NXπ
+          - paragraph [ref=e84]: Built for the regulated enterprise.
+          - link "All systems governed" [ref=e89] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e90]:
+          - heading "Platform" [level=3] [ref=e91]
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "MCP Fabric" [ref=e94] [cursor=pointer]:
+                - /url: /platform/mcp-fabric
+            - listitem [ref=e95]:
+              - link "Orchestration" [ref=e96] [cursor=pointer]:
+                - /url: /platform/orchestration
+            - listitem [ref=e97]:
+              - link "Hybrid RAG" [ref=e98] [cursor=pointer]:
+                - /url: /platform/rag
+            - listitem [ref=e99]:
+              - link "Workflows" [ref=e100] [cursor=pointer]:
+                - /url: /platform/workflows
+            - listitem [ref=e101]:
+              - link "Data Layer" [ref=e102] [cursor=pointer]:
+                - /url: /platform/data-layer
+            - listitem [ref=e103]:
+              - link "Governance" [ref=e104] [cursor=pointer]:
+                - /url: /platform/governance
+        - generic [ref=e105]:
+          - heading "Solutions" [level=3] [ref=e106]
+          - list [ref=e107]:
+            - listitem [ref=e108]:
+              - link "NXπ for SAP" [ref=e109] [cursor=pointer]:
+                - /url: /solutions/sap
+            - listitem [ref=e110]:
+              - link "NXπ for Salesforce" [ref=e111] [cursor=pointer]:
+                - /url: /solutions/salesforce
+            - listitem [ref=e112]:
+              - link "SAP + Salesforce Fusion" [ref=e113] [cursor=pointer]:
+                - /url: /solutions/fusion
+            - listitem [ref=e114]:
+              - link "For the CFO" [ref=e115] [cursor=pointer]:
+                - /url: /solutions/role/cfo
+            - listitem [ref=e116]:
+              - link "For the CISO" [ref=e117] [cursor=pointer]:
+                - /url: /solutions/role/ciso
+        - generic [ref=e118]:
+          - heading "Company" [level=3] [ref=e119]
+          - list [ref=e120]:
+            - listitem [ref=e121]:
+              - link "About" [ref=e122] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e123]:
+              - link "Customers" [ref=e124] [cursor=pointer]:
+                - /url: /customers
+            - listitem [ref=e125]:
+              - link "Blog" [ref=e126] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e127]:
+              - link "Changelog" [ref=e128] [cursor=pointer]:
+                - /url: /changelog
+            - listitem [ref=e129]:
+              - link "Contact" [ref=e130] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e131]:
+          - heading "Legal" [level=3] [ref=e132]
+          - list [ref=e133]:
+            - listitem [ref=e134]:
+              - link "Privacy Policy" [ref=e135] [cursor=pointer]:
+                - /url: /legal/privacy
+            - listitem [ref=e136]:
+              - link "Terms of Service" [ref=e137] [cursor=pointer]:
+                - /url: /legal/terms
+            - listitem [ref=e138]:
+              - link "DPA" [ref=e139] [cursor=pointer]:
+                - /url: /legal/dpa
+            - listitem [ref=e140]:
+              - link "EU AI Act Readiness" [ref=e141] [cursor=pointer]:
+                - /url: /legal/ai-act-readiness
+            - listitem [ref=e142]:
+              - link "Security" [ref=e143] [cursor=pointer]:
+                - /url: /security
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - paragraph [ref=e146]: © 2026 Negentrophi, Inc. All rights reserved.
+          - generic "Marketing visualization — not real telemetry" [ref=e147]:
+            - generic [ref=e149]: 847,293,441
+            - generic [ref=e150]: tokens processed
+        - link "security@nxpi.ai" [ref=e151] [cursor=pointer]:
+          - /url: mailto:security@nxpi.ai
+  - button "Open Next.js Dev Tools" [ref=e157] [cursor=pointer]:
+    - img [ref=e158]
+  - alert [ref=e161]
+  - generic [ref=e162]:
+    - paragraph [ref=e163]:
+      - text: We use privacy-preserving analytics (no cookies, no tracking pixels). Your DNT preference is respected.
+      - link "Privacy Policy" [ref=e164] [cursor=pointer]:
+        - /url: /legal/privacy
+    - button "Dismiss" [ref=e165]:
+      - img [ref=e166]

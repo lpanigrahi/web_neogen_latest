@@ -1,0 +1,46 @@
+[     565ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[     718ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[    1286ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  131243ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  131274ms] [LOG] [Fast Refresh] done in 60ms @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  157942ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  158229ms] [LOG] [Fast Refresh] done in 377ms @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  158337ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  158452ms] [LOG] [Fast Refresh] done in 215ms @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  158590ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  158713ms] [LOG] [Fast Refresh] done in 224ms @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  159000ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  159132ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  159904ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  183673ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  183781ms] [ERROR] ./components/site/Nav.tsx:88:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |     </header>
+  87 |   );
+> 88 | }
+     | ^
+  89 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/site/Nav.tsx
+    ./app/(marketing)/layout.tsx @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:3318
+[  183867ms] [ERROR] ./components/site/Nav.tsx:88:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  86 |     </header>
+  87 |   );
+> 88 | }
+     | ^
+  89 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/site/Nav.tsx
+    ./app/(marketing)/layout.tsx @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:3318
+[  183908ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  211879ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477
+[  211941ms] [LOG] [Fast Refresh] done in 89ms @ http://localhost:3001/_next/static/chunks/0213_next_dist_0d44q6a._.js:2477

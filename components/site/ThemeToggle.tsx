@@ -10,7 +10,7 @@ export function ThemeToggle({ className }: { className?: string }) {
   useEffect(() => {
     setMounted(true);
     const stored = localStorage.getItem("theme");
-    const current = stored ?? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const current = stored ?? "dark";
     setTheme(current as "dark" | "light");
   }, []);
 
