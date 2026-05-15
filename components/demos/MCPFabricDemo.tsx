@@ -111,6 +111,7 @@ export function MCPFabricDemo() {
           preserveAspectRatio="xMidYMid meet"
           className="w-full"
           style={{ height: "340px" }}
+          aria-hidden="true"
           onMouseLeave={() => { setHoveredId(null); setTooltipPos(null); }}
         >
           <defs>

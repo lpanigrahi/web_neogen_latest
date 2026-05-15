@@ -136,7 +136,7 @@ interface ArrowProps {
 function Arrow({ active }: ArrowProps) {
   return (
     <div className="relative flex items-center" style={{ width: 32 }}>
-      <svg width="32" height="40" viewBox="0 0 32 40" className="text-border-soft">
+      <svg width="32" height="40" viewBox="0 0 32 40" className="text-border-soft" aria-hidden="true">
         <line
           x1="0"
           y1="20"

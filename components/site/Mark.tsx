@@ -1,3 +1,5 @@
+"use client";
+import { useId } from "react";
 import { cn } from "@/lib/utils";
 
 interface MarkProps {
@@ -7,6 +9,8 @@ interface MarkProps {
 }
 
 export function Mark({ className, size = 32, showWordmark = true }: MarkProps) {
+  const gradientId = useId().replace(/:/g, "-");
+
   return (
     <div className={cn("flex items-center gap-2", className)}>
       <svg
@@ -19,18 +23,27 @@ export function Mark({ className, size = 32, showWordmark = true }: MarkProps) {
       >
         <title>NXπ logo mark</title>
         <defs>
-          <linearGradient id="mark-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#5B8DEF" />
             <stop offset="100%" stopColor="#9D7CFF" />
           </linearGradient>
         </defs>
-        <rect x="4" y="8" width="24" height="2.5" rx="1.25" fill="url(#mark-gradient)" />
-        <rect x="7" y="10.5" width="2.5" height="14" rx="1.25" fill="url(#mark-gradient)" />
-        <rect x="22.5" y="10.5" width="2.5" height="14" rx="1.25" fill="url(#mark-gradient)" />
-        <path d="M7 24.5 Q7 27 9.5 27" stroke="url(#mark-gradient)" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+        <rect x="4" y="8" width="24" height="2.5" rx="1.25" fill={`url(#${gradientId})`} />
+        <rect x="7" y="10.5" width="2.5" height="14" rx="1.25" fill={`url(#${gradientId})`} />
+        <rect x="22.5" y="10.5" width="2.5" height="14" rx="1.25" fill={`url(#${gradientId})`} />
+        <path
+          d="M7 24.5 Q7 27 9.5 27"
+          stroke={`url(#${gradientId})`}
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          fill="none"
+        />
       </svg>
       {showWordmark && (
-        <span className="font-sans font-semibold text-text-primary tracking-tight" style={{ fontSize: size * 0.6 }}>
+        <span
+          className="font-sans font-semibold text-text-primary tracking-tight"
+          style={{ fontSize: size * 0.6 }}
+        >
           NX<span style={{ fontStyle: "italic" }}>π</span>
         </span>
       )}
