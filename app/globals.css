@@ -58,7 +58,7 @@
   p { text-wrap: pretty; }
 
   :focus-visible {
-    outline: 2px solid var(--accent-aurora-2);
+    outline: 2px solid var(--accent-aurora-1);
     outline-offset: 4px;
     border-radius: var(--r-sm);
   }
