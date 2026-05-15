@@ -41,7 +41,10 @@ export function PillarCard({ eyebrow, title, body, bullets, href, demo, classNam
           </li>
         ))}
       </ul>
-      <Link href={href} className="mt-auto flex items-center gap-1 text-xs text-aurora-1 hover:text-aurora-2 transition-colors">
+      <Link
+        href={href}
+        className="mt-auto inline-flex items-center gap-1 text-xs text-aurora-1 hover:text-aurora-2 transition-colors min-h-[44px]"
+      >
         Learn more <ArrowRight size={12} />
       </Link>
     </motion.div>
