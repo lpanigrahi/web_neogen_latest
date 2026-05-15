@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# playwright artifacts
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# test screenshots at repo root
+*.png
+*.jpg
+
+# docs (source documents — not part of codebase)
+docs/
