@@ -38,8 +38,8 @@ export function Footer() {
   return (
     <footer className="border-t border-border-soft bg-bg-elev-1">
       <div className="mx-auto max-w-[1408px] px-5 lg:px-12 py-16">
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-5">
-          <div className="col-span-2 lg:col-span-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-5">
+          <div className="sm:col-span-2 lg:col-span-1">
             <Mark size={28} />
             <p className="mt-4 text-sm text-text-tertiary leading-relaxed">Built for the regulated enterprise.</p>
             <div className="mt-4 flex items-center gap-2">

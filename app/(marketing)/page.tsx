@@ -376,7 +376,7 @@ export default function HomePage() {
                   ))}
                 </ul>
                 <Link
-                  href="/integrations/sap"
+                  href="/solutions/sap"
                   className="flex items-center gap-1.5 text-sm text-aurora-1 hover:text-aurora-2 transition-colors mt-auto"
                 >
                   SAP integration details <ArrowRight size={14} />
@@ -414,7 +414,7 @@ export default function HomePage() {
                   ))}
                 </ul>
                 <Link
-                  href="/integrations/salesforce"
+                  href="/solutions/salesforce"
                   className="flex items-center gap-1.5 text-sm text-aurora-2 hover:text-aurora-1 transition-colors mt-auto"
                 >
                   Salesforce integration details <ArrowRight size={14} />

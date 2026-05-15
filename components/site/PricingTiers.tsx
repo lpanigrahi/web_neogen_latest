@@ -130,13 +130,16 @@ export function PricingTiers() {
           )}
         >
           Annual
-          <span className="ml-1.5 inline-flex items-center rounded-full bg-green/15 border border-green/30 px-1.5 py-0.5 text-xs text-green">
-            Save 20%
-          </span>
+          {annual && (
+            <span className="ml-1.5 inline-flex items-center rounded-full bg-green/15 border border-green/30 px-1.5 py-0.5 text-xs text-green">
+              Save 20%
+            </span>
+          )}
         </span>
       </div>
 
       {/* Tiers */}
+      <h2 className="sr-only">Pricing tiers</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         {TIERS.map((tier) => (
           <div
@@ -165,9 +168,9 @@ export function PricingTiers() {
               <p className="text-3xl font-bold text-text-primary">
                 {annual ? tier.annualPrice : tier.price}
               </p>
-              {annual && (
-                <p className="text-xs text-text-muted mt-1">Billed annually · 20% off</p>
-              )}
+              <p className="text-xs text-text-muted mt-1">
+                {annual ? "Billed annually · 20% off monthly rate" : "Billed monthly · switch to annual to save 20%"}
+              </p>
             </div>
 
             <ul className="space-y-3 mb-8 flex-1">

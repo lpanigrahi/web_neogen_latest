@@ -20,6 +20,16 @@ export const metadata: Metadata = {
   title: { default: "NXπ — The Enterprise AI Operations Platform", template: "%s | NXπ" },
   description: "NXπ connects SAP, Salesforce, and every data asset through governed AI agents — with the audit trail your regulators require and the sovereignty your CISO demands.",
   metadataBase: new URL("https://nxpi.ai"),
+  alternates: { canonical: "/" },
+  openGraph: {
+    siteName: "NXπ",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@nxpi_ai",
+  },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     apple: "/favicon.svg",

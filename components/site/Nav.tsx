@@ -64,9 +64,9 @@ export function Nav() {
 
           <div className="lg:hidden flex items-center gap-2">
             <ThemeToggle />
-            <button className="p-2 text-text-secondary hover:text-text-primary" onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen}>
-            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+            <button className="flex items-center justify-center w-11 h-11 text-text-secondary hover:text-text-primary" onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen}>
+              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
           </div>
         </div>
       </div>
