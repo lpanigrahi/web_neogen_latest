@@ -24,7 +24,9 @@ import { UTMPersonalizer } from "@/components/site/UTMPersonalizer";
 import { ArrowRight, ShieldCheck, Building2, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "NXπ — The Enterprise AI Operations Platform",
+  title: {
+    absolute: "NXπ — The Enterprise AI Operations Platform",
+  },
   description:
     "NXπ connects SAP, Salesforce, and every data asset through governed AI agents — with the audit trail your regulators require and the sovereignty your CISO demands.",
 };
