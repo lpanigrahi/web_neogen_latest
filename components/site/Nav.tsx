@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Search } from "lucide-react";
 import { Mark } from "./Mark";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "@/lib/utils";
 
 export function Nav() {
@@ -44,6 +45,7 @@ export function Nav() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
+            <ThemeToggle />
             <button
               className="hidden lg:flex items-center gap-2 text-text-muted hover:text-text-secondary text-xs border border-border-soft rounded-lg px-3 py-1.5 transition-colors"
               onClick={() => {
@@ -60,9 +62,12 @@ export function Nav() {
             <Button size="sm" asChild><Link href="/contact">Book a briefing</Link></Button>
           </div>
 
-          <button className="lg:hidden p-2 text-text-secondary hover:text-text-primary" onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen}>
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button className="p-2 text-text-secondary hover:text-text-primary" onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen}>
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
+          </div>
         </div>
       </div>
 
