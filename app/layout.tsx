@@ -27,32 +27,29 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
 };
 
+const orgSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Negentrophi",
+  alternateName: "NXπ",
+  url: "https://nxpi.ai",
+  logo: "https://nxpi.ai/brand/logo.svg",
+  contactPoint: { "@type": "ContactPoint", email: "security@nxpi.ai", contactType: "security" },
+  sameAs: [],
+});
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} ${instrumentSerif.variable}`} suppressHydrationWarning>
+      <head>
+        {/* JSON-LD in <head> — correct placement per schema.org + avoids React body script warning */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: orgSchema }} />
+      </head>
       <body className="bg-bg-base text-text-primary antialiased">
+        {/* Theme hydration script must be in <body> to run before React, preventing flash */}
         <script
           dangerouslySetInnerHTML={{
             __html: `try{const t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t==='light'?'light':'dark')}catch{}`,
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Negentrophi",
-              alternateName: "NXπ",
-              url: "https://nxpi.ai",
-              logo: "https://nxpi.ai/brand/logo.svg",
-              contactPoint: {
-                "@type": "ContactPoint",
-                email: "security@nxpi.ai",
-                contactType: "security",
-              },
-              sameAs: [],
-            }),
           }}
         />
         <CustomCursor />
