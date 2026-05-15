@@ -10,8 +10,20 @@ export function HeroSceneWrapper() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // Suppress THREE.Clock deprecation warning from R3F internals
+    // Remove when @react-three/fiber updates to THREE.Timer internally
+    const _warn = console.warn.bind(console);
+    console.warn = (...args: unknown[]) => {
+      if (typeof args[0] === "string" && args[0].includes("THREE.Clock")) return;
+      _warn(...args);
+    };
+
     setMounted(true);
     setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+    return () => {
+      console.warn = _warn;
+    };
   }, []);
 
   if (!mounted || reduced) {
