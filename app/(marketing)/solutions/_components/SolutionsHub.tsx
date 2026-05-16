@@ -95,6 +95,7 @@ function IndustryCard({ slug, title, lead }: { slug: string; title: string; lead
 
 export function SolutionsHub() {
   const [activeTab, setActiveTab] = useState<Tab>("role");
+  const sortedRoles = [...roles].sort((a, b) => (a.slug === "cfo" ? -1 : b.slug === "cfo" ? 1 : 0));
 
   return (
     <div>
@@ -107,11 +108,19 @@ export function SolutionsHub() {
 
       {/* By Role */}
       {activeTab === "role" && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {/* CFO first */}
-          {[...roles].sort((a, b) => (a.slug === "cfo" ? -1 : b.slug === "cfo" ? 1 : 0)).map((role) => (
-            <RoleCard key={role.slug} slug={role.slug} title={role.title} headline={role.headline} subhead={role.subhead} />
-          ))}
+        <div className="space-y-4">
+          {/* Row 1: 4 primary CXO roles */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+            {sortedRoles.slice(0, 4).map((role) => (
+              <RoleCard key={role.slug} slug={role.slug} title={role.title} headline={role.headline} subhead={role.subhead} />
+            ))}
+          </div>
+          {/* Row 2: 3 secondary CXO roles, spans full width */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {sortedRoles.slice(4).map((role) => (
+              <RoleCard key={role.slug} slug={role.slug} title={role.title} headline={role.headline} subhead={role.subhead} />
+            ))}
+          </div>
         </div>
       )}
 
@@ -126,10 +135,19 @@ export function SolutionsHub() {
 
       {/* By Industry */}
       {activeTab === "industry" && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {industries.map((industry) => (
-            <IndustryCard key={industry.slug} slug={industry.slug} title={industry.title} lead={industry.lead} />
-          ))}
+        <div className="space-y-4">
+          {/* Row 1: 3 industries */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {industries.slice(0, 3).map((industry) => (
+              <IndustryCard key={industry.slug} slug={industry.slug} title={industry.title} lead={industry.lead} />
+            ))}
+          </div>
+          {/* Row 2: remaining industries, spans full width */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {industries.slice(3).map((industry) => (
+              <IndustryCard key={industry.slug} slug={industry.slug} title={industry.title} lead={industry.lead} />
+            ))}
+          </div>
         </div>
       )}
     </div>
