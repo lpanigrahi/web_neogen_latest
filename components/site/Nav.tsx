@@ -59,7 +59,7 @@ export function Nav() {
               <span>Search</span>
               <kbd className="text-xs opacity-50">⌘K</kbd>
             </button>
-            <Button variant="ghost" size="sm" asChild><Link href="/contact">Sign in</Link></Button>
+            <Button variant="ghost" size="sm" asChild><Link href="/contact">Request access</Link></Button>
             <Button size="sm" asChild><Link href="/contact">Book a briefing</Link></Button>
           </div>
 
@@ -80,7 +80,7 @@ export function Nav() {
             </Link>
           ))}
           <div className="pt-4 flex flex-col gap-3">
-            <Button variant="secondary" asChild><Link href="/contact">Sign in</Link></Button>
+            <Button variant="secondary" asChild><Link href="/contact">Request access</Link></Button>
             <Button asChild><Link href="/contact">Book a briefing</Link></Button>
           </div>
         </div>

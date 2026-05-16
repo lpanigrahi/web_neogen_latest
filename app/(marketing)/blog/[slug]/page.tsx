@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { generateArticleSchema } from "@/lib/seo";
+import { ShareButtons } from "./ShareButtons";
+import { NewsletterForm } from "@/components/site/NewsletterForm";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -411,6 +413,70 @@ export default async function BlogPostPage({ params }: Props) {
               __html: JSON.stringify(generateArticleSchema(post.title, post.description, post.date)),
             }}
           />
+
+          {/* Social share */}
+          <FadeIn delay={0.1}>
+            <div className="mt-12 pt-8 border-t border-border-soft">
+              <ShareButtons slug={slugKey} />
+            </div>
+          </FadeIn>
+
+          {/* Author bio */}
+          <FadeIn delay={0.12}>
+            <div className="mt-10 pt-8 border-t border-border-soft flex items-start gap-5">
+              <div className="w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-aurora-1/20 to-aurora-3/20 border border-border-soft flex items-center justify-center">
+                <span className="text-sm font-bold text-aurora-1">Nπ</span>
+              </div>
+              <div>
+                <p className="font-semibold text-text-primary text-sm">NXπ Research</p>
+                <p className="text-text-tertiary text-xs mt-0.5 mb-2">Negentrophi, Inc.</p>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  NXπ Research publishes analysis on enterprise AI architecture, governed data
+                  infrastructure, and the Model Context Protocol — written by the team building
+                  the governed AI control plane for regulated enterprises.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Related articles */}
+          <FadeIn delay={0.14}>
+            <div className="mt-12">
+              <h2 className="text-lg font-semibold text-text-primary mb-6">Related articles</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {(Object.entries(postMeta) as [Slug, typeof postMeta[Slug]][])
+                  .filter(([s]) => s !== slugKey)
+                  .map(([s, p]) => (
+                    <Link
+                      key={s}
+                      href={`/blog/${s}`}
+                      className="block p-5 rounded-xl border border-border-soft bg-bg-elev-1 hover:bg-bg-elev-2 transition-colors group"
+                    >
+                      <span className="inline-flex items-center rounded-full border border-aurora-1/30 bg-aurora-1/10 px-2 py-0.5 text-xs text-aurora-1 mb-3">
+                        {p.tag}
+                      </span>
+                      <p className="text-sm font-medium text-text-primary leading-snug group-hover:text-aurora-1 transition-colors">
+                        {p.title}
+                      </p>
+                      <p className="text-xs text-text-tertiary mt-2">{p.readTime}</p>
+                    </Link>
+                  ))}
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Newsletter CTA */}
+          <FadeIn delay={0.16}>
+            <div className="mt-12 rounded-xl border border-border-soft bg-bg-elev-1 p-7">
+              <h2 className="text-base font-semibold text-text-primary mb-1">
+                Stay current on enterprise AI
+              </h2>
+              <p className="text-sm text-text-secondary mb-5">
+                NXπ Research updates, architecture deep-dives, and compliance briefings. No noise.
+              </p>
+              <NewsletterForm source="blog-post-newsletter" />
+            </div>
+          </FadeIn>
 
           {/* Footer nav */}
           <div className="mt-16 pt-8 border-t border-border-soft">

@@ -55,7 +55,7 @@ export const caseStudies = [
 
 export default function CustomersPage() {
   return (
-    <div className="min-h-screen pt-16">
+    <div className="pt-16">
       {/* Hero */}
       <section className="relative overflow-hidden">
         <MeshBackdrop intensity="low" />

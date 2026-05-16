@@ -49,7 +49,7 @@ export default function FusionPage() {
       {/* The gap callout */}
       <section className="mx-auto max-w-[1408px] px-5 lg:px-12 pb-20">
         <CalloutBox variant="aurora">
-          <h3 className="text-lg font-semibold text-text-primary mb-3">The gap that costs enterprises millions</h3>
+          <p className="text-lg font-semibold text-text-primary mb-3">The gap that costs enterprises millions</p>
           <p className="text-sm text-text-secondary leading-relaxed mb-4">
             SAP owns the transaction. Salesforce owns the relationship. Between them lives the most
             valuable data in the enterprise — and most organizations cannot access it without a

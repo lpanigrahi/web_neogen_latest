@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { BlogGrid } from "./BlogGrid";
+import { NewsletterForm } from "@/components/site/NewsletterForm";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -67,6 +68,23 @@ export default function BlogPage() {
       {/* Posts grid */}
       <section className="mx-auto max-w-[1408px] px-5 lg:px-12 py-16">
         <BlogGrid posts={posts} />
+      </section>
+
+      {/* Newsletter */}
+      <section className="border-t border-border-soft">
+        <div className="mx-auto max-w-[1408px] px-5 lg:px-12 py-16">
+          <FadeIn>
+            <div className="max-w-xl">
+              <h2 className="text-xl font-semibold text-text-primary mb-2">
+                Get research in your inbox
+              </h2>
+              <p className="text-sm text-text-secondary mb-6">
+                Architecture deep-dives and compliance briefings from NXπ Research. No noise.
+              </p>
+              <NewsletterForm source="blog-listing-newsletter" />
+            </div>
+          </FadeIn>
+        </div>
       </section>
     </div>
   );

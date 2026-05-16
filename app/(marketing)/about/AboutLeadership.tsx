@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { StaggerGroup, staggerItem } from "@/components/motion/StaggerGroup";
 
@@ -40,8 +41,17 @@ export function AboutLeadership({ leadership }: AboutLeadershipProps) {
           <p className="text-xs text-text-tertiary mb-1 font-medium uppercase tracking-wide">
             {person.role}
           </p>
-          <h3 className="font-semibold text-text-primary text-base mb-3">{person.name}</h3>
+          {person.name === "[Name]" ? (
+            <p className="text-sm italic text-text-tertiary mb-3">Profile coming soon</p>
+          ) : (
+            <h3 className="font-semibold text-text-primary text-base mb-3">{person.name}</h3>
+          )}
           <p className="text-sm text-text-secondary leading-relaxed">{person.bio}</p>
+          {person.name === "[Name]" && (
+            <Link href="/contact" className="mt-3 inline-block text-xs text-aurora-1 hover:opacity-80 transition-opacity">
+              Join our team →
+            </Link>
+          )}
         </motion.div>
       ))}
     </StaggerGroup>
