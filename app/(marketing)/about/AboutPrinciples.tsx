@@ -30,7 +30,7 @@ export function AboutPrinciples({ principles }: AboutPrinciplesProps) {
           </motion.div>
         ))}
       </StaggerGroup>
-      <StaggerGroup className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:max-w-[66.666%]">
+      <StaggerGroup className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {bottomRow.map((p) => (
           <motion.div
             key={p.number}

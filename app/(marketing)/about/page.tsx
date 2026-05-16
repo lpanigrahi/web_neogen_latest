@@ -43,11 +43,17 @@ export const principles = [
     description:
       "Enterprise infrastructure is not replaced overnight. We design for the 10-year horizon while shipping every sprint. Patient about vision, impatient about execution.",
   },
+  {
+    number: "06",
+    title: "Sovereignty Over Systems",
+    description:
+      "Enterprises must own their AI stack, their data, and their decisions. We build systems where the customer — not the vendor — retains control. AI that cannot be audited, modified, or exited is not infrastructure. It is dependency.",
+  },
 ];
 
 export const leadership = [
   {
-    role: "Founder / CEO",
+    role: "Co-Founder / CEO",
     name: "[Name]",
     bio: "Previously led enterprise AI strategy at a Fortune 500. Deep background in financial systems, ERP integration, and enterprise architecture.",
   },
@@ -57,9 +63,27 @@ export const leadership = [
     bio: "Prior infrastructure and platform engineering leadership. Built data infrastructure at scale for regulated industries. Open-source contributor to the MCP ecosystem.",
   },
   {
-    role: "Head of Product",
+    role: "Co-Founder / Global Markets",
     name: "[Name]",
     bio: "Enterprise software product leadership across ERP, analytics, and AI workflow platforms. Focused on making complex systems legible to non-technical decision-makers.",
+  },
+];
+
+export const advisors = [
+  {
+    role: "Strategic Advisor",
+    name: "[Name]",
+    bio: "Former SVP at a global enterprise software company. Led go-to-market for AI and data platforms across EMEA and APAC. Deep relationships with Fortune 500 CIOs and digital transformation leaders.",
+  },
+  {
+    role: "Technical Advisor",
+    name: "[Name]",
+    bio: "AI researcher and systems architect with published work on knowledge graphs and retrieval-augmented generation. Previously principal scientist at a leading AI research lab.",
+  },
+  {
+    role: "Policy & Compliance Advisor",
+    name: "[Name]",
+    bio: "Regulatory strategist with expertise in financial services compliance, data sovereignty, and the EU AI Act. Advised regulators and Fortune 100 legal teams on responsible AI frameworks.",
   },
 ];
 
@@ -109,7 +133,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1408px] px-5 lg:px-12 py-24">
           <FadeIn>
             <h2 className="text-2xl lg:text-3xl font-bold text-text-primary mb-4">
-              Five founding principles
+              Six founding principles
             </h2>
             <p className="text-text-secondary max-w-2xl mb-16">
               These are not values we aspire to. They are the constraints we design within.
@@ -128,6 +152,12 @@ export default function AboutPage() {
           </p>
         </FadeIn>
         <AboutLeadership leadership={leadership} />
+        <div className="mt-16">
+          <FadeIn>
+            <h3 className="text-lg font-semibold text-text-primary mb-8">Advisors</h3>
+          </FadeIn>
+          <AboutLeadership leadership={advisors} />
+        </div>
       </section>
 
       {/* Careers */}
