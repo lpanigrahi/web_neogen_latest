@@ -106,16 +106,14 @@ export function SolutionsHub() {
         <TabButton active={activeTab === "industry"} onClick={() => setActiveTab("industry")}>By Industry</TabButton>
       </div>
 
-      {/* By Role */}
+      {/* By Role — 2-row layout: row 1 = 4 cards, row 2 = 3 cards spanning full width */}
       {activeTab === "role" && (
         <div className="space-y-4">
-          {/* Row 1: 4 primary CXO roles */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
             {sortedRoles.slice(0, 4).map((role) => (
               <RoleCard key={role.slug} slug={role.slug} title={role.title} headline={role.headline} subhead={role.subhead} />
             ))}
           </div>
-          {/* Row 2: 3 secondary CXO roles, spans full width */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {sortedRoles.slice(4).map((role) => (
               <RoleCard key={role.slug} slug={role.slug} title={role.title} headline={role.headline} subhead={role.subhead} />

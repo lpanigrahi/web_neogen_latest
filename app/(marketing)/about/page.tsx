@@ -156,7 +156,7 @@ export default function AboutPage() {
           <FadeIn>
             <h3 className="text-lg font-semibold text-text-primary mb-8">Advisors</h3>
           </FadeIn>
-          <AboutLeadership leadership={advisors} />
+          <AboutLeadership leadership={advisors} variant="advisor" />
         </div>
       </section>
 

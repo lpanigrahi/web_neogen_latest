@@ -6,9 +6,10 @@ interface MarqueeRowProps {
   items: React.ReactNode[];
   speed?: number;
   className?: string;
+  gap?: string;
 }
 
-export function MarqueeRow({ items, speed = 0.5, className }: MarqueeRowProps) {
+export function MarqueeRow({ items, speed = 0.5, className, gap = "gap-4" }: MarqueeRowProps) {
   const trackRef = useRef<HTMLDivElement>(null);
   const offsetRef = useRef(0);
   const pausedRef = useRef(false);
@@ -38,7 +39,7 @@ export function MarqueeRow({ items, speed = 0.5, className }: MarqueeRowProps) {
       onMouseEnter={() => { pausedRef.current = true; }}
       onMouseLeave={() => { pausedRef.current = false; }}
     >
-      <div ref={trackRef} className="flex gap-8 w-max">
+      <div ref={trackRef} className={`flex w-max ${gap}`}>
         {items}
         {items}
       </div>

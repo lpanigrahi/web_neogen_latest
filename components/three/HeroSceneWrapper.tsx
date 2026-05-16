@@ -25,7 +25,9 @@ export function HeroSceneWrapper() {
     setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
   }, []);
 
-  if (!mounted || reduced) {
+  if (!mounted) return null;
+
+  if (reduced) {
     return (
       <div className="absolute inset-0">
         <MeshBackdrop intensity="high" className="inset-0" />

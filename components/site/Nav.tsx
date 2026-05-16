@@ -17,6 +17,12 @@ export function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
   const navLinks = [
     { href: "/platform", label: "Platform" },
     { href: "/solutions", label: "Solutions" },
@@ -46,6 +52,7 @@ export function Nav() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
+            {/* H2: desktop toggle is the canonical one — mobile toggle below is aria-hidden */}
             <ThemeToggle />
             <button
               className="hidden lg:flex items-center gap-2 text-text-muted hover:text-text-secondary text-xs border border-border-soft rounded-lg px-3 py-1.5 transition-colors"
@@ -64,6 +71,8 @@ export function Nav() {
           </div>
 
           <div className="lg:hidden flex items-center gap-2">
+            {/* H2: display:none from `hidden lg:flex` on the desktop toggle already removes it from
+                the a11y tree at mobile. This mobile toggle is the visible/canonical one here. */}
             <ThemeToggle />
             <button className="flex items-center justify-center w-11 h-11 text-text-secondary hover:text-text-primary" onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen}>
               {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -72,18 +81,33 @@ export function Nav() {
         </div>
       </div>
 
+      {/* H1: Full-viewport mobile menu overlay with backdrop */}
       {mobileOpen && (
-        <div className="lg:hidden bg-bg-elev-1 border-t border-border-soft px-5 py-6 space-y-4">
-          {[...navLinks, { href: "/about", label: "About" }].map((l) => (
-            <Link key={l.href} href={l.href} className="block text-base text-text-secondary hover:text-text-primary py-2" onClick={() => setMobileOpen(false)}>
-              {l.label}
-            </Link>
-          ))}
-          <div className="pt-4 flex flex-col gap-3">
-            <Button variant="secondary" asChild><Link href="/contact">Request access</Link></Button>
-            <Button asChild><Link href="/contact">Book a briefing</Link></Button>
+        <>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm lg:hidden"
+            aria-hidden="true"
+            onClick={() => setMobileOpen(false)}
+          />
+          {/* Menu panel — sits below the 64px header (top-16) */}
+          <div className="fixed inset-x-0 top-16 bottom-0 z-50 overflow-y-auto bg-bg-elev-1 border-t border-border-soft px-5 py-6 space-y-4 lg:hidden">
+            {[...navLinks, { href: "/about", label: "About" }].map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="block text-base text-text-secondary hover:text-text-primary py-2"
+                onClick={() => setMobileOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ))}
+            <div className="pt-4 flex flex-col gap-3">
+              <Button variant="secondary" asChild><Link href="/contact" onClick={() => setMobileOpen(false)}>Request access</Link></Button>
+              <Button asChild><Link href="/contact" onClick={() => setMobileOpen(false)}>Book a briefing</Link></Button>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </header>
   );
