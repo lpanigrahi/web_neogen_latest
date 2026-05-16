@@ -137,6 +137,7 @@ const pillars = [
     ],
     href: "/platform/governance",
     demo: <GovernanceDemo />,
+    className: "lg:col-span-3",
   },
 ];
 
@@ -327,6 +328,7 @@ export default function HomePage() {
                 href={pillar.href}
                 demo={pillar.demo}
                 featured={pillar.featured}
+                className={pillar.className}
               />
             ))}
           </BentoGrid>
